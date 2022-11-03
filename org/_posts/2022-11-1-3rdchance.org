@@ -1,9 +1,9 @@
-#+BEGIN_SRC HTML
+#+BEGIN_EXPORT HTML
 ---
 layout: post
 title: Using org-mode to write Jekyll blogs
 ---
-#+END_SRC
+#+END_EXPORT
 
 Third Chance !
 There is no justice, But We should give more Chance to a person include yourself. And I think two chances is not enough! 
@@ -18,3 +18,15 @@ There is no justice, But We should give more Chance to a person include yourself
 - use org-pomodoro for focus practice
 
 * test for github page
+
+
+* githut page note
+
+git commit -m 'rebuild pages' --allow-empty
+git push origin <branch-name>
+
+
+
+sudo apt install ruby-bundler
+bundle install 
+bundle exec jekyll serve
