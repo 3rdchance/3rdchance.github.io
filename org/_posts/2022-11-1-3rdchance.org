@@ -6,7 +6,15 @@ title: Using org-mode to write Jekyll blogs
 #+END_SRC
 
 Third Chance !
-
+There is no justice, But We should give more Chance to a person include yourself. And I think two chances is not enough! 
 * Now Doing
 1. Hoard
 2. Linux kernel memory reclaim algorithms
+3. jemalloc && pmdk ctl interface and implementation
+
+* Habits
+- Reject Smoke
+- reduce mobile time, and use time for thinking
+- use org-pomodoro for focus practice
+
+* test for github page
