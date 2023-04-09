@@ -1,4 +1,0 @@
-* Ubuntu
-1. ubuntu:窗口/终端最大化或者全屏快捷键设置
-打开“系统设置”==>“键盘”==>“自定义快捷键”
-命令：gnome-terminal  --maximize
