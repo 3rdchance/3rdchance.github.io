@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-06-21 Wed 17:01 -->
+<!-- 2023-06-30 Fri 18:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -200,51 +200,319 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5c26c20">1. 2023</a>
+<li><a href="#org4c4cea7">1. Contents</a></li>
+<li><a href="#org7714bcb">2. 2023</a>
 <ul>
-<li><a href="#org3945734">1.1. 202306</a>
+<li><a href="#orgaf3d823">2.1. 202306</a>
 <ul>
-<li><a href="#org3c38b4d">1.1.1. io<sub>uring</sub></a></li>
-<li><a href="#org93c2bd3">1.1.2. c operation priority</a></li>
-<li><a href="#orgbb7f496">1.1.3. C++ atomic</a></li>
-<li><a href="#org02ff972">1.1.4. linux kernel synchronization primitives</a></li>
-<li><a href="#orgd6208f0">1.1.5. pmdk internal data structure and algorithms</a></li>
+<li><a href="#org284ccae">2.1.1. io<sub>uring</sub></a></li>
+<li><a href="#orgad051bd">2.1.2. c operation priority</a></li>
+<li><a href="#orgc545d98">2.1.3. C++ atomic</a></li>
+<li><a href="#org2a3e589">2.1.4. linux kernel synchronization primitives</a></li>
+<li><a href="#orgbda69a1">2.1.5. pmdk internal data structure and algorithms</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href="#org4e7e1f4">3. language</a>
+<ul>
+<li><a href="#org428d0bf">3.1. array initialization &amp;&amp; global variable (202306)</a></li>
+</ul>
+</li>
+<li><a href="#org5d7ce23">4. C++ lambda</a></li>
+<li><a href="#org880acd7">5. Language types and Variable</a>
+<ul>
+<li><a href="#org0ff5688">5.1. Rust Data types</a></li>
+<li><a href="#org1ff353a">5.2. <span class="todo TODO">TODO</span> Bash variable</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5c26c20" class="outline-2">
-<h2 id="org5c26c20"><span class="section-number-2">1.</span> 2023</h2>
+<div id="outline-container-org4c4cea7" class="outline-2">
+<h2 id="org4c4cea7"><span class="section-number-2">1.</span> Contents</h2>
 <div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>C++ lambda: component, variadic pack, generalize capture,  constexpr lambda</li>
+
+<li>Language</li>
+</ul>
+<p>
+&#x2013; Rust types
+</p>
+<ol class="org-ol">
+<li>scalar type, interge overflow</li>
+<li>tuple: pattern mating to destructure, index access</li>
+<li>Array: declare, define, initialize, access, out of bound</li>
+</ol>
 </div>
-<div id="outline-container-org3945734" class="outline-3">
-<h3 id="org3945734"><span class="section-number-3">1.1.</span> 202306</h3>
-<div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-org3c38b4d" class="outline-4">
-<h4 id="org3c38b4d"><span class="section-number-4">1.1.1.</span> io<sub>uring</sub></h4>
+
+<div id="outline-container-org7714bcb" class="outline-2">
+<h2 id="org7714bcb"><span class="section-number-2">2.</span> 2023</h2>
+<div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org93c2bd3" class="outline-4">
-<h4 id="org93c2bd3"><span class="section-number-4">1.1.2.</span> c operation priority</h4>
+<div id="outline-container-orgaf3d823" class="outline-3">
+<h3 id="orgaf3d823"><span class="section-number-3">2.1.</span> 202306</h3>
+<div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-orgbb7f496" class="outline-4">
-<h4 id="orgbb7f496"><span class="section-number-4">1.1.3.</span> C++ atomic</h4>
+<div id="outline-container-org284ccae" class="outline-4">
+<h4 id="org284ccae"><span class="section-number-4">2.1.1.</span> io<sub>uring</sub></h4>
 </div>
-<div id="outline-container-org02ff972" class="outline-4">
-<h4 id="org02ff972"><span class="section-number-4">1.1.4.</span> linux kernel synchronization primitives</h4>
+<div id="outline-container-orgad051bd" class="outline-4">
+<h4 id="orgad051bd"><span class="section-number-4">2.1.2.</span> c operation priority</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<p>
+算术运算符 &gt; 移位 &gt; 关系运算符 &gt; 位运算符  &gt; 逻辑运算符 &gt; 条件运算符 &gt; 赋值运算符
+</p>
 </div>
-<div id="outline-container-orgd6208f0" class="outline-4">
-<h4 id="orgd6208f0"><span class="section-number-4">1.1.5.</span> pmdk internal data structure and algorithms</h4>
+</div>
+<div id="outline-container-orgc545d98" class="outline-4">
+<h4 id="orgc545d98"><span class="section-number-4">2.1.3.</span> C++ atomic</h4>
+</div>
+<div id="outline-container-org2a3e589" class="outline-4">
+<h4 id="org2a3e589"><span class="section-number-4">2.1.4.</span> linux kernel synchronization primitives</h4>
+</div>
+<div id="outline-container-orgbda69a1" class="outline-4">
+<h4 id="orgbda69a1"><span class="section-number-4">2.1.5.</span> pmdk internal data structure and algorithms</h4>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org4e7e1f4" class="outline-2">
+<h2 id="org4e7e1f4"><span class="section-number-2">3.</span> language</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org428d0bf" class="outline-3">
+<h3 id="org428d0bf"><span class="section-number-3">3.1.</span> array initialization &amp;&amp; global variable (202306)</h3>
+<div class="outline-text-3" id="text-3-1">
+<ol class="org-ol">
+<li><p>
+Array initialization
+Compile Time Initialization
+   (i) Initializing all specified memory locations:  int a[5]={10,15,1,3,20};
+</p>
+
+<p>
+(ii) Partial array initialization:- Partial array initialization is possible in c language. 
+    If the number of values to be initialized is less than the size of the array, then the elements will be initialized to zero automatically.
+    int a[5]={10,15};
+   ?  If you do not initialize a structure variable, the effect depends on whether it is has static storage (see Storage Class Specifiers) or not. If it is, members with integral types are initialized with 0 and pointer members are initialized to NULL; otherwise, the value of the structure's members is indeterminate.
+</p>
+
+<p>
+(iii) Initialization without size:- 
+     char b[]={'C','O','M','P','U','T','E','R'};
+</p>
+
+<p>
+(iv) Array initialization with a string: -Consider the declaration with string initialization.
+       char b[]="COMPUTER";
+</p></li>
+</ol>
+
+
+<ol class="org-ol">
+<li>Designated Initializers:
+ In C99 there is an alternate mechanism, that allows you to initialize specific elements, not necessarily at the beginning.
+       int numbers[ 100 ] = { 1, 2, 3, [10] = 10, 11, 12, [60] = 50, [42] = 420 };
+ Note that the designated initializers do not need to appear in order. )
+ As with traditional methods, all uninitialized values are set to zero.
+If the size of the array is not given, then the largest initialized position determines the size of the array.</li>
+
+<li><p>
+initialization with no values is C++?
+The initializer can even have no values, just the braces:
+int baz [5] = { };
+This creates an array of five int values, each initialized with a value of zero:
+</p>
+
+<p>
+ typedef struct {
+      int a;
+      int b;
+      int c;
+      int d;
+} Hello;
+</p>
+
+<p>
+The universal zero initializer in C is {0}, not {}.
+Hello hello[6] = {{0}};
+</p></li>
+
+<li>zeror universal zero initializer
+C89: If there are fewer initializers in a list than there are members of an aggregate, the remainder of the aggregate shall be initialized implicitly the same as objects that have static storage duration.</li>
+
+<li>global varibles
+ All global variables (variables at file scope) are by default initialized to zero since they have static storage duration (C99 6.7.8.10). 
+ So strictly speaking, you needn't initialize them to zero, the C standard guarantees that they are zero by default.
+It is good programming practice to initialize them explicitly however, as mentioned in the answer by Ziyaod Wei.</li>
+</ol>
+
+
+<p>
+std::fill(cc<sub>no</sub><sub>issue</sub>, cc<sub>no</sub><sub>issue</sub>+context.size(); 0) ;
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org5d7ce23" class="outline-2">
+<h2 id="org5d7ce23"><span class="section-number-2">4.</span> C++ lambda</h2>
+<div class="outline-text-2" id="text-4">
+<ol class="org-ol">
+<li>capture clause (Also known as the lambda-introducer in the C++ specification.)
+<ul class="org-ul">
+<li>Capture: which variable, by reference / value</li>
+<li>capture this</li>
+<li><p>
+pack expansion
+</p>
+
+<p>
+template&lt;class&#x2026; Args&gt;
+void f(Args&#x2026; args) {
+     auto x = [args&#x2026;] { return g(args&#x2026;); };
+     x();
+}
+</p>
+<ul class="org-ul">
+<li>Generalized capture (C++ 14):
+In C++14, you can introduce and initialize new variables in the capture clause
+pNums = make<sub>unique</sub>&lt;vector&lt;int&gt;&gt;(nums);
+//&#x2026;
+auto a = [ptr = move(pNums)]()
+  {
+     // use ptr
+  };</li>
+</ul></li>
+</ul></li>
+<li>parameter list Optional. (Also known as the lambda declarator)</li>
+<li>mutable specification Optional.</li>
+</ol>
+<p>
+4.exception-specification Optional.
+5.trailing-return-type Optional.
+constexpr lambda expressions ( &gt;=C++17)
+</p>
+
+<p>
+TODO:
+Ellipsis and variadic templates
+lambda body.
+</p>
+
+
+
+<ul class="org-ul">
+<li>constexpr lambda expressions</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org880acd7" class="outline-2">
+<h2 id="org880acd7"><span class="section-number-2">5.</span> Language types and Variable</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org0ff5688" class="outline-3">
+<h3 id="org0ff5688"><span class="section-number-3">5.1.</span> Rust Data types</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+statically typed language, which means that it must know the types of all variables at compile time. 
+integers, floating-point numbers, Booleans, and characters. 
+</p>
+
+<ol class="org-ol">
+<li><p>
+scalar types
+integer literals 57u8 1<sub>000</sub>
+</p>
+
+<p>
+Decimal	98<sub>222</sub>
+Hex	0xff
+Octal	0o77
+Binary	0b1111<sub>0000</sub>
+Byte (u8 only)	b'A'
+</p>
+
+<p>
+integer types default to i32
+The primary situation in which you’d use isize or usize is when indexing some sort of collection.
+</p>
+<ul class="org-ul">
+<li><p>
+integer overflow
+debug  mode: Rust includes checks for integer overflow that cause your program to panic at runtime
+release mode: two’s complement wrapping.
+</p>
+
+<p>
+Wrap in all modes with the wrapping<sub>*</sub> methods, such as wrapping<sub>add</sub>.
+Return the None value if there is overflow with the checked<sub>*</sub> methods.
+Return the value and a boolean indicating whether there was overflow with the overflowing<sub>*</sub> methods.
+Saturate at the value’s minimum or maximum values with the saturating<sub>*</sub> methods.
+</p></li>
+</ul></li>
+
+<li>Numeric Operations</li>
+<li>Char: Rust’s char type is four bytes in size and represents a Unicode Scalar Value,</li>
+
+<li>Compound Types
+let tup: (i32, f64, u8) = (500, 6.4, 1);
+
+<ul class="org-ul">
+<li>pattern matching to destructure a tuple value, like this:
+let tup = (500, 6.4, 1);
+let (x, y, z) = tup;</li>
+
+<li>index access
+let x: (i32, f64, u8) = (500, 6.4, 1);
+let five<sub>hundred</sub> = x.0;
+let six<sub>point</sub><sub>four</sub> = x.1;</li>
+</ul></li>
+</ol>
+
+
+<p>
+2.2 Array Type
+   let a = [1, 2, 3, 4, 5];
+   let a: [i32; 5] = [1, 2, 3, 4, 5];
+initialize an array to contain the same value
+    let a = [3; 5];  [3, 3, 3, 3,3]
+</p>
+
+<p>
+TODO : Rust array designed initialization or partial initialization
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1ff353a" class="outline-3">
+<h3 id="org1ff353a"><span class="section-number-3">5.2.</span> <span class="todo TODO">TODO</span> Bash variable</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+Bash variables are untyped
+Essentially, Bash variables are character strings, but, depending on context, Bash permits arithmetic operations and comparisons on variables. 
+</p>
+
+<p>
+null variable vs undeclared variable
+declare -i
+declare [options] [name[=value]] [name[=value]] &#x2026;
+</p>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: nxl</p>
-<p class="date">Created: 2023-06-21 Wed 17:01</p>
+<p class="date">Created: 2023-06-30 Fri 18:05</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
