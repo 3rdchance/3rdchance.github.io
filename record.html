@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-06-30 Fri 18:05 -->
+<!-- 2023-09-05 Tue 13:24 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -200,38 +200,60 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org4c4cea7">1. Contents</a></li>
-<li><a href="#org7714bcb">2. 2023</a>
+<li><a href="#org1473238">1. 20230904 12:00 - 20230905 12:00</a></li>
+<li><a href="#orgb169d7f">2. Contents</a></li>
+<li><a href="#orgeb44379">3. 2023</a>
 <ul>
-<li><a href="#orgaf3d823">2.1. 202306</a>
+<li><a href="#orgf58e821">3.1. 202306</a>
 <ul>
-<li><a href="#org284ccae">2.1.1. io<sub>uring</sub></a></li>
-<li><a href="#orgad051bd">2.1.2. c operation priority</a></li>
-<li><a href="#orgc545d98">2.1.3. C++ atomic</a></li>
-<li><a href="#org2a3e589">2.1.4. linux kernel synchronization primitives</a></li>
-<li><a href="#orgbda69a1">2.1.5. pmdk internal data structure and algorithms</a></li>
+<li><a href="#org4fd0a76">3.1.1. io<sub>uring</sub></a></li>
+<li><a href="#org14d451d">3.1.2. C++ atomic</a></li>
+<li><a href="#org0705731">3.1.3. linux kernel synchronization primitives</a></li>
+<li><a href="#orgeb266b9">3.1.4. pmdk internal data structure and algorithms</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org4e7e1f4">3. language</a>
+<li><a href="#orge8d0837">4. language</a>
 <ul>
-<li><a href="#org428d0bf">3.1. array initialization &amp;&amp; global variable (202306)</a></li>
+<li><a href="#org1d87479">4.1. array initialization &amp;&amp; global variable (202306)</a></li>
 </ul>
 </li>
-<li><a href="#org5d7ce23">4. C++ lambda</a></li>
-<li><a href="#org880acd7">5. Language types and Variable</a>
+<li><a href="#org35d5ee8">5. C++ lambda</a></li>
+<li><a href="#org34588a3">6. Language types and Variable</a>
 <ul>
-<li><a href="#org0ff5688">5.1. Rust Data types</a></li>
-<li><a href="#org1ff353a">5.2. <span class="todo TODO">TODO</span> Bash variable</a></li>
+<li><a href="#org8e27c42">6.1. Rust Data types</a></li>
+<li><a href="#orgbbb182f">6.2. <span class="todo TODO">TODO</span> Bash variable</a></li>
+</ul>
+</li>
+<li><a href="#org3aa38c1">7. 202308</a>
+<ul>
+<li><a href="#orgdc572e7">7.1. 20230808</a>
+<ul>
+<li><a href="#orgdf6019b">7.1.1. c operation priority</a></li>
+<li><a href="#org7b715f9">7.1.2. linux kernel wait queues</a></li>
+<li><a href="#org66b614d">7.1.3. rust mutability</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4c4cea7" class="outline-2">
-<h2 id="org4c4cea7"><span class="section-number-2">1.</span> Contents</h2>
+<p>
+Today is 20230904. I plan stop my career as a worker. I Plan record everyday noon.
+</p>
+<div id="outline-container-org1473238" class="outline-2">
+<h2 id="org1473238"><span class="section-number-2">1.</span> 20230904 12:00 - 20230905 12:00</h2>
 <div class="outline-text-2" id="text-1">
+<p>
+Not focus, no progress
+</p>
+</div>
+</div>
+<div id="outline-container-orgb169d7f" class="outline-2">
+<h2 id="orgb169d7f"><span class="section-number-2">2.</span> Contents</h2>
+<div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li>C++ lambda: component, variadic pack, generalize capture,  constexpr lambda</li>
 
@@ -248,45 +270,36 @@
 </div>
 </div>
 
-<div id="outline-container-org7714bcb" class="outline-2">
-<h2 id="org7714bcb"><span class="section-number-2">2.</span> 2023</h2>
-<div class="outline-text-2" id="text-2">
-</div>
-<div id="outline-container-orgaf3d823" class="outline-3">
-<h3 id="orgaf3d823"><span class="section-number-3">2.1.</span> 202306</h3>
-<div class="outline-text-3" id="text-2-1">
-</div>
-<div id="outline-container-org284ccae" class="outline-4">
-<h4 id="org284ccae"><span class="section-number-4">2.1.1.</span> io<sub>uring</sub></h4>
-</div>
-<div id="outline-container-orgad051bd" class="outline-4">
-<h4 id="orgad051bd"><span class="section-number-4">2.1.2.</span> c operation priority</h4>
-<div class="outline-text-4" id="text-2-1-2">
-<p>
-算术运算符 &gt; 移位 &gt; 关系运算符 &gt; 位运算符  &gt; 逻辑运算符 &gt; 条件运算符 &gt; 赋值运算符
-</p>
-</div>
-</div>
-<div id="outline-container-orgc545d98" class="outline-4">
-<h4 id="orgc545d98"><span class="section-number-4">2.1.3.</span> C++ atomic</h4>
-</div>
-<div id="outline-container-org2a3e589" class="outline-4">
-<h4 id="org2a3e589"><span class="section-number-4">2.1.4.</span> linux kernel synchronization primitives</h4>
-</div>
-<div id="outline-container-orgbda69a1" class="outline-4">
-<h4 id="orgbda69a1"><span class="section-number-4">2.1.5.</span> pmdk internal data structure and algorithms</h4>
-</div>
-</div>
-</div>
-
-
-<div id="outline-container-org4e7e1f4" class="outline-2">
-<h2 id="org4e7e1f4"><span class="section-number-2">3.</span> language</h2>
+<div id="outline-container-orgeb44379" class="outline-2">
+<h2 id="orgeb44379"><span class="section-number-2">3.</span> 2023</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org428d0bf" class="outline-3">
-<h3 id="org428d0bf"><span class="section-number-3">3.1.</span> array initialization &amp;&amp; global variable (202306)</h3>
+<div id="outline-container-orgf58e821" class="outline-3">
+<h3 id="orgf58e821"><span class="section-number-3">3.1.</span> 202306</h3>
 <div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org4fd0a76" class="outline-4">
+<h4 id="org4fd0a76"><span class="section-number-4">3.1.1.</span> io<sub>uring</sub></h4>
+</div>
+<div id="outline-container-org14d451d" class="outline-4">
+<h4 id="org14d451d"><span class="section-number-4">3.1.2.</span> C++ atomic</h4>
+</div>
+<div id="outline-container-org0705731" class="outline-4">
+<h4 id="org0705731"><span class="section-number-4">3.1.3.</span> linux kernel synchronization primitives</h4>
+</div>
+<div id="outline-container-orgeb266b9" class="outline-4">
+<h4 id="orgeb266b9"><span class="section-number-4">3.1.4.</span> pmdk internal data structure and algorithms</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge8d0837" class="outline-2">
+<h2 id="orge8d0837"><span class="section-number-2">4.</span> language</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org1d87479" class="outline-3">
+<h3 id="org1d87479"><span class="section-number-3">4.1.</span> array initialization &amp;&amp; global variable (202306)</h3>
+<div class="outline-text-3" id="text-4-1">
 <ol class="org-ol">
 <li><p>
 Array initialization
@@ -361,10 +374,9 @@ std::fill(cc<sub>no</sub><sub>issue</sub>, cc<sub>no</sub><sub>issue</sub>+conte
 
 
 
-
-<div id="outline-container-org5d7ce23" class="outline-2">
-<h2 id="org5d7ce23"><span class="section-number-2">4.</span> C++ lambda</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org35d5ee8" class="outline-2">
+<h2 id="org35d5ee8"><span class="section-number-2">5.</span> C++ lambda</h2>
+<div class="outline-text-2" id="text-5">
 <ol class="org-ol">
 <li>capture clause (Also known as the lambda-introducer in the C++ specification.)
 <ul class="org-ul">
@@ -415,13 +427,13 @@ lambda body.
 </div>
 </div>
 
-<div id="outline-container-org880acd7" class="outline-2">
-<h2 id="org880acd7"><span class="section-number-2">5.</span> Language types and Variable</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org34588a3" class="outline-2">
+<h2 id="org34588a3"><span class="section-number-2">6.</span> Language types and Variable</h2>
+<div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-org0ff5688" class="outline-3">
-<h3 id="org0ff5688"><span class="section-number-3">5.1.</span> Rust Data types</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-org8e27c42" class="outline-3">
+<h3 id="org8e27c42"><span class="section-number-3">6.1.</span> Rust Data types</h3>
+<div class="outline-text-3" id="text-6-1">
 <p>
 statically typed language, which means that it must know the types of all variables at compile time. 
 integers, floating-point numbers, Booleans, and characters. 
@@ -494,9 +506,9 @@ TODO : Rust array designed initialization or partial initialization
 </div>
 
 
-<div id="outline-container-org1ff353a" class="outline-3">
-<h3 id="org1ff353a"><span class="section-number-3">5.2.</span> <span class="todo TODO">TODO</span> Bash variable</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-orgbbb182f" class="outline-3">
+<h3 id="orgbbb182f"><span class="section-number-3">6.2.</span> <span class="todo TODO">TODO</span> Bash variable</h3>
+<div class="outline-text-3" id="text-6-2">
 <p>
 Bash variables are untyped
 Essentially, Bash variables are character strings, but, depending on context, Bash permits arithmetic operations and comparisons on variables. 
@@ -510,9 +522,65 @@ declare [options] [name[=value]] [name[=value]] &#x2026;
 </div>
 </div>
 </div>
+
+
+
+
+
+
+
+
+<div id="outline-container-org3aa38c1" class="outline-2">
+<h2 id="org3aa38c1"><span class="section-number-2">7.</span> 202308</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgdc572e7" class="outline-3">
+<h3 id="orgdc572e7"><span class="section-number-3">7.1.</span> 20230808</h3>
+<div class="outline-text-3" id="text-7-1">
+</div>
+<div id="outline-container-orgdf6019b" class="outline-4">
+<h4 id="orgdf6019b"><span class="section-number-4">7.1.1.</span> c operation priority</h4>
+<div class="outline-text-4" id="text-7-1-1">
+<p>
+算术运算符 &gt; 移位 &gt; 关系运算符 &gt; 位运算符  &gt; 逻辑运算符 &gt; 条件运算符 &gt; 赋值运算符 &gt; 逗号运算符
+关系运算内部符优先级
+位运算符优先级
+逻辑运算符优先级
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7b715f9" class="outline-4">
+<h4 id="org7b715f9"><span class="section-number-4">7.1.2.</span> linux kernel wait queues</h4>
+<div class="outline-text-4" id="text-7-1-2">
+<ul class="org-ul">
+<li>condition wait</li>
+</ul>
+<p>
+todo linux signal &amp;&amp; sleep<sub>on</sub>?
+semaphore: down<sub>interruptible</sub> vs down
+</p>
+</div>
+</div>
+
+<div id="outline-container-org66b614d" class="outline-4">
+<h4 id="org66b614d"><span class="section-number-4">7.1.3.</span> rust mutability</h4>
+<div class="outline-text-4" id="text-7-1-3">
+<p>
+mut vs const ?  runtime vs compile time
+</p>
+
+<p>
+review control flow and guessing game
+</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2023-06-30 Fri 18:05</p>
+<p class="author">Author: nxl</p>
+<p class="date">Created: 2023-09-05 Tue 13:24</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
