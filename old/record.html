@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-09-05 Tue 13:24 -->
+<!-- 2023-09-19 Tue 13:35 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -200,60 +200,263 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org1473238">1. 20230904 12:00 - 20230905 12:00</a></li>
-<li><a href="#orgb169d7f">2. Contents</a></li>
-<li><a href="#orgeb44379">3. 2023</a>
+<li><a href="#org628aa85">1. Record</a>
 <ul>
-<li><a href="#orgf58e821">3.1. 202306</a>
+<li><a href="#org2ac56aa">1.1. Day 1 20230904 12:00 - 20230905 12:00</a>
 <ul>
-<li><a href="#org4fd0a76">3.1.1. io<sub>uring</sub></a></li>
-<li><a href="#org14d451d">3.1.2. C++ atomic</a></li>
-<li><a href="#org0705731">3.1.3. linux kernel synchronization primitives</a></li>
-<li><a href="#orgeb266b9">3.1.4. pmdk internal data structure and algorithms</a></li>
+<li><a href="#org0370931">1.1.1. rust variable immutable, constant</a></li>
+<li><a href="#org7dd1135">1.1.2. Datatypes: scalar vs composed</a></li>
+<li><a href="#orgefa59ba">1.1.3. Function: signature, statement vs expression</a></li>
+</ul>
+</li>
+<li><a href="#org3ea4d6c">1.2. Day 2 20230905 - 20230906</a></li>
+<li><a href="#org67b184c">1.3. Day 3 20230906 12:00 - 20230907 12:00</a></li>
+<li><a href="#orgc7fa719">1.4. Day 4 20230907</a></li>
+<li><a href="#org48f9c4a">1.5. Day 5 20230908</a></li>
+<li><a href="#orgbf7393d">1.6. Day 6 20230909</a></li>
+<li><a href="#org2c84978">1.7. Day 7 20230910 12:00 - 2</a></li>
+<li><a href="#org38acebc">1.8. Day 8 20230911</a></li>
+<li><a href="#org2b0b195">1.9. Day 9 20230912</a></li>
+<li><a href="#orged21bc9">1.10. Day 10 20230913</a></li>
+<li><a href="#org3ef30ff">1.11. Day 11 20230914 - 20230915</a></li>
+<li><a href="#org8fe10bd">1.12. Day 12 20230915 - 20230916 Saturday</a></li>
+<li><a href="#org76378f6">1.13. Day 13 20230916 - 20230917 Sunday</a></li>
+<li><a href="#org8f7c15c">1.14. Day 14 20230917 - 20230918</a></li>
+<li><a href="#org5bc57d4">1.15. Day 15 20230918 - 20230918</a></li>
+</ul>
+</li>
+<li><a href="#org3e35ecc">2. Memos</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org9331109">2.0.1. c operation priority</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orge8d0837">4. language</a>
+<li><a href="#org60362f2">3. Contents</a></li>
+<li><a href="#org093c74f">4. 2023</a>
 <ul>
-<li><a href="#org1d87479">4.1. array initialization &amp;&amp; global variable (202306)</a></li>
+<li><a href="#org29c1617">4.1. 202306</a>
+<ul>
+<li><a href="#org72bef76">4.1.1. io<sub>uring</sub></a></li>
+<li><a href="#orge76739e">4.1.2. C++ atomic</a></li>
+<li><a href="#orga40af22">4.1.3. linux kernel synchronization primitives</a></li>
+<li><a href="#org85cd5d8">4.1.4. pmdk internal data structure and algorithms</a></li>
 </ul>
 </li>
-<li><a href="#org35d5ee8">5. C++ lambda</a></li>
-<li><a href="#org34588a3">6. Language types and Variable</a>
-<ul>
-<li><a href="#org8e27c42">6.1. Rust Data types</a></li>
-<li><a href="#orgbbb182f">6.2. <span class="todo TODO">TODO</span> Bash variable</a></li>
 </ul>
 </li>
-<li><a href="#org3aa38c1">7. 202308</a>
+<li><a href="#org6aa53f7">5. language</a>
 <ul>
-<li><a href="#orgdc572e7">7.1. 20230808</a>
-<ul>
-<li><a href="#orgdf6019b">7.1.1. c operation priority</a></li>
-<li><a href="#org7b715f9">7.1.2. linux kernel wait queues</a></li>
-<li><a href="#org66b614d">7.1.3. rust mutability</a></li>
+<li><a href="#org418cc01">5.1. array initialization &amp;&amp; global variable (202306)</a></li>
 </ul>
 </li>
+<li><a href="#org5d7d3a3">6. C++ lambda</a></li>
+<li><a href="#orgb22afbd">7. Language types and Variable</a>
+<ul>
+<li><a href="#org5d33edf">7.1. Rust Data types</a></li>
+<li><a href="#orgfa5b30f">7.2. <span class="todo TODO">TODO</span> Bash variable</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<p>
-Today is 20230904. I plan stop my career as a worker. I Plan record everyday noon.
-</p>
-<div id="outline-container-org1473238" class="outline-2">
-<h2 id="org1473238"><span class="section-number-2">1.</span> 20230904 12:00 - 20230905 12:00</h2>
+<div id="outline-container-org628aa85" class="outline-2">
+<h2 id="org628aa85"><span class="section-number-2">1.</span> Record</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Not focus, no progress
+Today is 20230904. I plan stop my career as a employee. I Plan record everyday at noon.
+小作文练习
+</p>
+</div>
+<div id="outline-container-org2ac56aa" class="outline-3">
+<h3 id="org2ac56aa"><span class="section-number-3">1.1.</span> Day 1 20230904 12:00 - 20230905 12:00</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Lack focus, progress is little
+</p>
+
+<ol class="org-ol">
+<li>Vector mut iter</li>
+</ol>
+<p>
+let mut v = vec![100, 32, 57];
+for i in &amp;mut v {
+    *i += 50;
+}
+</p>
+
+<p>
+let mut v = vec![100, 32, 57];
+for i in v.iter<sub>mut</sub>() {
+    *i += 50;
+}
+</p>
+</div>
+
+<div id="outline-container-org0370931" class="outline-4">
+<h4 id="org0370931"><span class="section-number-4">1.1.1.</span> rust variable immutable, constant</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ol class="org-ol">
+<li>can variable defined in global scope</li>
+<li>is constant defined in namespace, can be accessed from parent</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org7dd1135" class="outline-4">
+<h4 id="org7dd1135"><span class="section-number-4">1.1.2.</span> Datatypes: scalar vs composed</h4>
+</div>
+<div id="outline-container-orgefa59ba" class="outline-4">
+<h4 id="orgefa59ba"><span class="section-number-4">1.1.3.</span> Function: signature, statement vs expression</h4>
+</div>
+</div>
+<div id="outline-container-org3ea4d6c" class="outline-3">
+<h3 id="org3ea4d6c"><span class="section-number-3">1.2.</span> Day 2 20230905 - 20230906</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Kernel : linux synchronization
+good mood is important. last afternood feel tired physically and mentally. need some thing quickly change it
+Must have a belief: I will get better !
+Must have confidence: I am the best one !
 </p>
 </div>
 </div>
-<div id="outline-container-orgb169d7f" class="outline-2">
-<h2 id="orgb169d7f"><span class="section-number-2">2.</span> Contents</h2>
+
+<div id="outline-container-org67b184c" class="outline-3">
+<h3 id="org67b184c"><span class="section-number-3">1.3.</span> Day 3 20230906 12:00 - 20230907 12:00</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Maybe I was sick. allergy, feel tired
+Need more ambitious and more energy.
+should find two things
+</p>
+<ol class="org-ol">
+<li>method to keep energy, keep happy. All bad things is not my fault. keep progress is good.</li>
+<li>method to quickly get happy, even unhappy things happened.</li>
+<li>克服焦虑
+ 担心不会发生的事
+担心无法改变的事
+没有行动，没有改善</li>
+
+<li>认真做一件事</li>
+</ol>
+<p>
+Start my mobile project for netdisk project
+</p>
+</div>
+</div>
+<div id="outline-container-orgc7fa719" class="outline-3">
+<h3 id="orgc7fa719"><span class="section-number-3">1.4.</span> Day 4 20230907</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+IJ make me sad. because I can't keep the promise of progress of development.
+未按照许诺的时间完成进度
+</p>
+</div>
+</div>
+<div id="outline-container-org48f9c4a" class="outline-3">
+<h3 id="org48f9c4a"><span class="section-number-3">1.5.</span> Day 5 20230908</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+wasted by short video, and smoking
+</p>
+</div>
+</div>
+<div id="outline-container-orgbf7393d" class="outline-3">
+<h3 id="orgbf7393d"><span class="section-number-3">1.6.</span> Day 6 20230909</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+wasted by short video, and smoking
+</p>
+</div>
+</div>
+<div id="outline-container-org2c84978" class="outline-3">
+<h3 id="org2c84978"><span class="section-number-3">1.7.</span> Day 7 20230910 12:00 - 2</h3>
+</div>
+
+<div id="outline-container-org38acebc" class="outline-3">
+<h3 id="org38acebc"><span class="section-number-3">1.8.</span> Day 8 20230911</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+time wasted, because use a wrong version of jimkv
+fill in at 20230914
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2b0b195" class="outline-3">
+<h3 id="org2b0b195"><span class="section-number-3">1.9.</span> Day 9 20230912</h3>
+<div class="outline-text-3" id="text-1-9">
+<p>
+gray deployed one cluster
+fill in at 20230914
+</p>
+</div>
+</div>
+<div id="outline-container-orged21bc9" class="outline-3">
+<h3 id="orged21bc9"><span class="section-number-3">1.10.</span> Day 10 20230913</h3>
+<div class="outline-text-3" id="text-1-10">
+<p>
+work occupied most time
+</p>
+</div>
+</div>
+<div id="outline-container-org3ef30ff" class="outline-3">
+<h3 id="org3ef30ff"><span class="section-number-3">1.11.</span> Day 11 20230914 - 20230915</h3>
+<div class="outline-text-3" id="text-1-11">
+<p>
+目标必须明确，困难必须克服。 不能向困难屈服
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8fe10bd" class="outline-3">
+<h3 id="org8fe10bd"><span class="section-number-3">1.12.</span> Day 12 20230915 - 20230916 Saturday</h3>
+</div>
+<div id="outline-container-org76378f6" class="outline-3">
+<h3 id="org76378f6"><span class="section-number-3">1.13.</span> Day 13 20230916 - 20230917 Sunday</h3>
+</div>
+<div id="outline-container-org8f7c15c" class="outline-3">
+<h3 id="org8f7c15c"><span class="section-number-3">1.14.</span> Day 14 20230917 - 20230918</h3>
+<div class="outline-text-3" id="text-1-14">
+<p>
+tired : I should Getup earlier. do not drink / smoke
+Health is important. I feel sick recently.
+</p>
+</div>
+</div>
+<div id="outline-container-org5bc57d4" class="outline-3">
+<h3 id="org5bc57d4"><span class="section-number-3">1.15.</span> Day 15 20230918 - 20230918</h3>
+<div class="outline-text-3" id="text-1-15">
+<p>
+Recoverd, Health and good mood is most important element to success
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3e35ecc" class="outline-2">
+<h2 id="org3e35ecc"><span class="section-number-2">2.</span> Memos</h2>
 <div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org9331109" class="outline-4">
+<h4 id="org9331109"><span class="section-number-4">2.0.1.</span> c operation priority</h4>
+<div class="outline-text-4" id="text-2-0-1">
+<p>
+算术运算符 &gt; 移位 &gt; 关系运算符 &gt; 位运算符  &gt; 逻辑运算符 &gt; 条件运算符 &gt; 赋值运算符 &gt; 逗号运算符
+关系运算内部符优先级
+位运算符优先级
+逻辑运算符优先级
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org60362f2" class="outline-2">
+<h2 id="org60362f2"><span class="section-number-2">3.</span> Contents</h2>
+<div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li>C++ lambda: component, variadic pack, generalize capture,  constexpr lambda</li>
 
@@ -270,36 +473,36 @@ Not focus, no progress
 </div>
 </div>
 
-<div id="outline-container-orgeb44379" class="outline-2">
-<h2 id="orgeb44379"><span class="section-number-2">3.</span> 2023</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org093c74f" class="outline-2">
+<h2 id="org093c74f"><span class="section-number-2">4.</span> 2023</h2>
+<div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-orgf58e821" class="outline-3">
-<h3 id="orgf58e821"><span class="section-number-3">3.1.</span> 202306</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-org29c1617" class="outline-3">
+<h3 id="org29c1617"><span class="section-number-3">4.1.</span> 202306</h3>
+<div class="outline-text-3" id="text-4-1">
 </div>
-<div id="outline-container-org4fd0a76" class="outline-4">
-<h4 id="org4fd0a76"><span class="section-number-4">3.1.1.</span> io<sub>uring</sub></h4>
+<div id="outline-container-org72bef76" class="outline-4">
+<h4 id="org72bef76"><span class="section-number-4">4.1.1.</span> io<sub>uring</sub></h4>
 </div>
-<div id="outline-container-org14d451d" class="outline-4">
-<h4 id="org14d451d"><span class="section-number-4">3.1.2.</span> C++ atomic</h4>
+<div id="outline-container-orge76739e" class="outline-4">
+<h4 id="orge76739e"><span class="section-number-4">4.1.2.</span> C++ atomic</h4>
 </div>
-<div id="outline-container-org0705731" class="outline-4">
-<h4 id="org0705731"><span class="section-number-4">3.1.3.</span> linux kernel synchronization primitives</h4>
+<div id="outline-container-orga40af22" class="outline-4">
+<h4 id="orga40af22"><span class="section-number-4">4.1.3.</span> linux kernel synchronization primitives</h4>
 </div>
-<div id="outline-container-orgeb266b9" class="outline-4">
-<h4 id="orgeb266b9"><span class="section-number-4">3.1.4.</span> pmdk internal data structure and algorithms</h4>
+<div id="outline-container-org85cd5d8" class="outline-4">
+<h4 id="org85cd5d8"><span class="section-number-4">4.1.4.</span> pmdk internal data structure and algorithms</h4>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orge8d0837" class="outline-2">
-<h2 id="orge8d0837"><span class="section-number-2">4.</span> language</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org6aa53f7" class="outline-2">
+<h2 id="org6aa53f7"><span class="section-number-2">5.</span> language</h2>
+<div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org1d87479" class="outline-3">
-<h3 id="org1d87479"><span class="section-number-3">4.1.</span> array initialization &amp;&amp; global variable (202306)</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-org418cc01" class="outline-3">
+<h3 id="org418cc01"><span class="section-number-3">5.1.</span> array initialization &amp;&amp; global variable (202306)</h3>
+<div class="outline-text-3" id="text-5-1">
 <ol class="org-ol">
 <li><p>
 Array initialization
@@ -374,9 +577,9 @@ std::fill(cc<sub>no</sub><sub>issue</sub>, cc<sub>no</sub><sub>issue</sub>+conte
 
 
 
-<div id="outline-container-org35d5ee8" class="outline-2">
-<h2 id="org35d5ee8"><span class="section-number-2">5.</span> C++ lambda</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org5d7d3a3" class="outline-2">
+<h2 id="org5d7d3a3"><span class="section-number-2">6.</span> C++ lambda</h2>
+<div class="outline-text-2" id="text-6">
 <ol class="org-ol">
 <li>capture clause (Also known as the lambda-introducer in the C++ specification.)
 <ul class="org-ul">
@@ -427,13 +630,13 @@ lambda body.
 </div>
 </div>
 
-<div id="outline-container-org34588a3" class="outline-2">
-<h2 id="org34588a3"><span class="section-number-2">6.</span> Language types and Variable</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-orgb22afbd" class="outline-2">
+<h2 id="orgb22afbd"><span class="section-number-2">7.</span> Language types and Variable</h2>
+<div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org8e27c42" class="outline-3">
-<h3 id="org8e27c42"><span class="section-number-3">6.1.</span> Rust Data types</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-org5d33edf" class="outline-3">
+<h3 id="org5d33edf"><span class="section-number-3">7.1.</span> Rust Data types</h3>
+<div class="outline-text-3" id="text-7-1">
 <p>
 statically typed language, which means that it must know the types of all variables at compile time. 
 integers, floating-point numbers, Booleans, and characters. 
@@ -506,9 +709,9 @@ TODO : Rust array designed initialization or partial initialization
 </div>
 
 
-<div id="outline-container-orgbbb182f" class="outline-3">
-<h3 id="orgbbb182f"><span class="section-number-3">6.2.</span> <span class="todo TODO">TODO</span> Bash variable</h3>
-<div class="outline-text-3" id="text-6-2">
+<div id="outline-container-orgfa5b30f" class="outline-3">
+<h3 id="orgfa5b30f"><span class="section-number-3">7.2.</span> <span class="todo TODO">TODO</span> Bash variable</h3>
+<div class="outline-text-3" id="text-7-2">
 <p>
 Bash variables are untyped
 Essentially, Bash variables are character strings, but, depending on context, Bash permits arithmetic operations and comparisons on variables. 
@@ -522,65 +725,10 @@ declare [options] [name[=value]] [name[=value]] &#x2026;
 </div>
 </div>
 </div>
-
-
-
-
-
-
-
-
-<div id="outline-container-org3aa38c1" class="outline-2">
-<h2 id="org3aa38c1"><span class="section-number-2">7.</span> 202308</h2>
-<div class="outline-text-2" id="text-7">
-</div>
-<div id="outline-container-orgdc572e7" class="outline-3">
-<h3 id="orgdc572e7"><span class="section-number-3">7.1.</span> 20230808</h3>
-<div class="outline-text-3" id="text-7-1">
-</div>
-<div id="outline-container-orgdf6019b" class="outline-4">
-<h4 id="orgdf6019b"><span class="section-number-4">7.1.1.</span> c operation priority</h4>
-<div class="outline-text-4" id="text-7-1-1">
-<p>
-算术运算符 &gt; 移位 &gt; 关系运算符 &gt; 位运算符  &gt; 逻辑运算符 &gt; 条件运算符 &gt; 赋值运算符 &gt; 逗号运算符
-关系运算内部符优先级
-位运算符优先级
-逻辑运算符优先级
-</p>
-</div>
-</div>
-
-<div id="outline-container-org7b715f9" class="outline-4">
-<h4 id="org7b715f9"><span class="section-number-4">7.1.2.</span> linux kernel wait queues</h4>
-<div class="outline-text-4" id="text-7-1-2">
-<ul class="org-ul">
-<li>condition wait</li>
-</ul>
-<p>
-todo linux signal &amp;&amp; sleep<sub>on</sub>?
-semaphore: down<sub>interruptible</sub> vs down
-</p>
-</div>
-</div>
-
-<div id="outline-container-org66b614d" class="outline-4">
-<h4 id="org66b614d"><span class="section-number-4">7.1.3.</span> rust mutability</h4>
-<div class="outline-text-4" id="text-7-1-3">
-<p>
-mut vs const ?  runtime vs compile time
-</p>
-
-<p>
-review control flow and guessing game
-</p>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: nxl</p>
-<p class="date">Created: 2023-09-05 Tue 13:24</p>
+<p class="date">Created: 2023-09-19 Tue 13:35</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
