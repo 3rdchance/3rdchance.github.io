@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-03-22 Fri 18:28 -->
+<!-- 2024-03-25 Mon 10:43 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -200,37 +200,50 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org6354ecd">1. EMACS</a>
+<li><a href="#orgb5cd219">1. EMACS</a>
 <ul>
-<li><a href="#org0ca49e8">1.1. Org-mode</a></li>
+<li><a href="#orgc221661">1.1. Org-mode</a></li>
 </ul>
 </li>
-<li><a href="#orgf18ce88">2. TMUX</a>
+<li><a href="#org5ce6098">2. TMUX</a>
 <ul>
-<li><a href="#org0326bab">2.1. copy mode</a></li>
+<li><a href="#orge963c6b">2.1. copy mode</a></li>
 </ul>
 </li>
-<li><a href="#org1c6c4be">3. Git</a>
+<li><a href="#orgeb23742">3. Git</a>
 <ul>
-<li><a href="#org1b54811">3.1. git clone &#x2013;mirror</a></li>
-<li><a href="#orgd6f95c0">3.2. merge two repos: merege project-a to project-b</a></li>
-<li><a href="#org1dc6d6e">3.3. git remote management</a></li>
+<li><a href="#orgd4538a0">3.1. git clone &#x2013;mirror</a></li>
+<li><a href="#org3ef23be">3.2. merge two repos: merege project-a to project-b</a></li>
+<li><a href="#org2956152">3.3. git remote management</a></li>
+</ul>
+</li>
+<li><a href="#org4371220">4. system</a>
+<ul>
+<li><a href="#orge1e26b8">4.1. update-alternatives</a></li>
+</ul>
+</li>
+<li><a href="#orgc620858">5. Vim</a>
+<ul>
+<li><a href="#orge0cb550">5.1. code fold</a></li>
+<li><a href="#orgc20e78c">5.2. coc.nvim install</a></li>
+<li><a href="#orgb633008">5.3. coc.nivm configure</a></li>
+<li><a href="#org8f1ec03">5.4. coc.nvim Usage</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org6354ecd" class="outline-2">
-<h2 id="org6354ecd"><span class="section-number-2">1.</span> EMACS</h2>
+<div id="outline-container-orgb5cd219" class="outline-2">
+<h2 id="orgb5cd219"><span class="section-number-2">1.</span> EMACS</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org0ca49e8" class="outline-3">
-<h3 id="org0ca49e8"><span class="section-number-3">1.1.</span> Org-mode</h3>
+<div id="outline-container-orgc221661" class="outline-3">
+<h3 id="orgc221661"><span class="section-number-3">1.1.</span> Org-mode</h3>
 <div class="outline-text-3" id="text-1-1">
 <ol class="org-ol">
 <li>hide block code</li>
 </ol>
-<div class="PARAM" id="org251e8b6">
+<div class="PARAM" id="org7632b6d">
 <p>
 (setq org-hide-block-startup t)
 <a href="https://www.gnu.org/software/emacs/manual/html_mono/org.html#Paragraphs">https://www.gnu.org/software/emacs/manual/html_mono/org.html#Paragraphs</a>
@@ -241,7 +254,7 @@
 <ol class="org-ol">
 <li>export html no footer</li>
 </ol>
-<div class="CODE" id="orgd96cf87">
+<div class="CODE" id="orgdf997bd">
 <p>
 (setq org-export-html-postamble nil)
 </p>
@@ -253,12 +266,12 @@
 
 
 
-<div id="outline-container-orgf18ce88" class="outline-2">
-<h2 id="orgf18ce88"><span class="section-number-2">2.</span> TMUX</h2>
+<div id="outline-container-org5ce6098" class="outline-2">
+<h2 id="org5ce6098"><span class="section-number-2">2.</span> TMUX</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0326bab" class="outline-3">
-<h3 id="org0326bab"><span class="section-number-3">2.1.</span> copy mode</h3>
+<div id="outline-container-orge963c6b" class="outline-3">
+<h3 id="orge963c6b"><span class="section-number-3">2.1.</span> copy mode</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Enter ‘copy mode’ by pressing CTRL+b, [.
@@ -273,12 +286,12 @@ Ctrl-b # : view a list of copied text
 </div>
 </div>
 
-<div id="outline-container-org1c6c4be" class="outline-2">
-<h2 id="org1c6c4be"><span class="section-number-2">3.</span> Git</h2>
+<div id="outline-container-orgeb23742" class="outline-2">
+<h2 id="orgeb23742"><span class="section-number-2">3.</span> Git</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org1b54811" class="outline-3">
-<h3 id="org1b54811"><span class="section-number-3">3.1.</span> git clone &#x2013;mirror</h3>
+<div id="outline-container-orgd4538a0" class="outline-3">
+<h3 id="orgd4538a0"><span class="section-number-3">3.1.</span> git clone &#x2013;mirror</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 git clone &#x2013;mirror git@coding.jd.com:pmem/pmdk.git
@@ -287,8 +300,8 @@ git remote update
 </div>
 </div>
 
-<div id="outline-container-orgd6f95c0" class="outline-3">
-<h3 id="orgd6f95c0"><span class="section-number-3">3.2.</span> merge two repos: merege project-a to project-b</h3>
+<div id="outline-container-org3ef23be" class="outline-3">
+<h3 id="org3ef23be"><span class="section-number-3">3.2.</span> merge two repos: merege project-a to project-b</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 cd path/to/project-b
@@ -300,13 +313,176 @@ git remote remove project-a
 </div>
 </div>
 
-<div id="outline-container-org1dc6d6e" class="outline-3">
-<h3 id="org1dc6d6e"><span class="section-number-3">3.3.</span> git remote management</h3>
+<div id="outline-container-org2956152" class="outline-3">
+<h3 id="org2956152"><span class="section-number-3">3.3.</span> git remote management</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 git remote add origin git@xxxxurl                                               
 git branch -M main                                                              
 git push -u origin main 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4371220" class="outline-2">
+<h2 id="org4371220"><span class="section-number-2">4.</span> system</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orge1e26b8" class="outline-3">
+<h3 id="orge1e26b8"><span class="section-number-3">4.1.</span> update-alternatives</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+$ sudo update-alternatives &#x2013;config editor / clangd
+$ sudo update-alternatives &#x2013;auto editor
+sudo update-alternatives &#x2013;install /usr/bin/clangd clangd /usr/bin/clangd-12 100
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc620858" class="outline-2">
+<h2 id="orgc620858"><span class="section-number-2">5.</span> Vim</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orge0cb550" class="outline-3">
+<h3 id="orge0cb550"><span class="section-number-3">5.1.</span> code fold</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+set foldmark=marker  " comment{{{ " }}}
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgc20e78c" class="outline-3">
+<h3 id="orgc20e78c"><span class="section-number-3">5.2.</span> coc.nvim install</h3>
+<div class="outline-text-3" id="text-5-2">
+<ol class="org-ol">
+<li>install node.js</li>
+</ol>
+<p>
+sudo apt-get install nodejs
+curl -sL install-node.now.sh/lts | bash
+</p>
+<ol class="org-ol">
+<li>For vim-plug users:</li>
+</ol>
+<p>
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+:PlugInstall
+</p>
+<ol class="org-ol">
+<li>coc.nvim plugin install</li>
+</ol>
+<p>
+:CocInstall CocList
+:CocInstall coc-json coc-tsserver
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb633008" class="outline-3">
+<h3 id="orgb633008"><span class="section-number-3">5.3.</span> coc.nivm configure</h3>
+<div class="outline-text-3" id="text-5-3">
+<ol class="org-ol">
+<li>language server install
+<ul class="org-ul">
+<li>:h coc-config-languageserver
+apt-get install ccls -y
+apt-get install clangd-12 -y
+sudo update-alternatives &#x2013;config clangd
+or sudo update-alternatives &#x2013;install /usr/bin/clangd clangd /usr/bin/clangd-12 100</li>
+
+<li>:CocInstall coc-clangd
+coc-clangd will try to find clangd from your $PATH, if not found, you can run :CocCommand clangd.install to install the latest release from GitHub</li>
+
+<li>coc-clangd adds support for:</li>
+</ul></li>
+</ol>
+
+<p>
+Switching between header and implementation file: 
+:CocCommand clangd.switchSourceHeader
+You can open in split buffer by :CocCommand clangd.switchSourceHeader vsplit
+ Describe symbol under the cursor: :CocCommand clangd.symbolInfo
+</p>
+
+
+<p>
+1.:Cocconfig - ccls
+vim ~/.vim/coc-settings.json
+{                                                                               
+"languageserver": {                                                             
+  "ccls": {                                                                     
+    "command": "ccls",                                                          
+    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],                   
+    "rootPatterns": [".ccls", "compile<sub>commands.json</sub>", ".git/", ".hg/"],        
+    "initializationOptions": {                                                  
+        "cache": {                                                              
+          "directory": "/tmp/ccls"                                              
+        }                                                                       
+      }                                                                         
+  }                                                                             
+}                                                                               
+}
+</p>
+
+<ul class="org-ul">
+<li>ccls for c++17</li>
+</ul>
+<p>
+create .ccls in project folder
+   clang++
+   %h %cpp -std=c++17 
+</p>
+
+<ol class="org-ol">
+<li>:Cocconfig - clangd</li>
+</ol>
+<div class="org-src-container">
+<pre class="src src-clangd">"languageserver": {
+  "clangd": {
+    "command": "clangd",
+    "rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+  }
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org8f1ec03" class="outline-3">
+<h3 id="org8f1ec03"><span class="section-number-3">5.4.</span> coc.nvim Usage</h3>
+<div class="outline-text-3" id="text-5-4">
+<ol class="org-ol">
+<li>project management</li>
+</ol>
+<p>
+cmake -DCMAKE<sub>EXPORT</sub><sub>COMPILE</sub><sub>COMMANDS</sub>=1
+</p>
+
+<ol class="org-ol">
+<li>&lt;leader&gt; key</li>
+</ol>
+<p>
+The &lt;Leader&gt; key is mapped to \ by default. 
+So if you have a map of &lt;Leader&gt;t, you can execute it by default with \+t
+</p>
+
+
+<ol class="org-ol">
+<li>find symbol</li>
+</ol>
+<p>
+:call CocAction('jumpReferences', &lt;symbol-name&gt;)
+</p>
+
+<p>
+" Search workspace symbols.
+nnoremap &lt;silent&gt;&lt;nowait&gt; &lt;space&gt;s  :&lt;C-u&gt;CocList -I symbols&lt;cr&gt;
+so by we can search a symbol in a project just by hitting &lt;space&gt;s and type the symbol name in the openning interactive buffer.
 </p>
 </div>
 </div>
