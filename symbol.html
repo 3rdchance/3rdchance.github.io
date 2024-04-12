@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-04-12 Fri 16:55 -->
+<!-- 2024-04-12 Fri 17:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -200,47 +200,44 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org3805df6">1. 202404</a>
+<li><a href="#orgdbf3729">1. 202404</a>
 <ul>
-<li><a href="#org478ee16">1.1. 20240412</a></li>
-<li><a href="#orgfbaf7c6">1.2. gdb</a></li>
-<li><a href="#org78099c2">1.3. design problem : hash key encode problem in kv system</a></li>
+<li><a href="#org140e20d">1.1. 20240412</a></li>
+<li><a href="#org98eb206">1.2. gdb</a></li>
+<li><a href="#org9689f83">1.3. design problem : hash key encode problem in kv system</a></li>
 </ul>
 </li>
-<li><a href="#org92b952d">2. 202403</a>
+<li><a href="#org2af0ac5">2. 202403</a>
 <ul>
-<li><a href="#orga1b85b9">2.1. explicitly defaulted and deleted functions</a></li>
+<li><a href="#org680322a">2.1. explicitly defaulted and deleted functions</a></li>
 </ul>
 </li>
-<li><a href="#orgd604153">3. C++ trival type advantage</a></li>
-<li><a href="#orgc3249fd">4. Language::C++ smartpoint</a></li>
-<li><a href="#orgcc30cf3">5. English</a>
+<li><a href="#orgb328092">3. C++ trival type advantage</a></li>
+<li><a href="#org5c0525a">4. Language::C++ smartpoint</a></li>
+<li><a href="#org8748e92">5. English</a>
 <ul>
-<li><a href="#org68c39c2">5.1. 202303</a></li>
+<li><a href="#org2daf9ca">5.1. 202303</a></li>
 </ul>
 </li>
-<li><a href="#orge6c22fb">6. 202404</a></li>
+<li><a href="#org0298554">6. 202404</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3805df6" class="outline-2">
-<h2 id="org3805df6"><span class="section-number-2">1.</span> 202404</h2>
+<div id="outline-container-orgdbf3729" class="outline-2">
+<h2 id="orgdbf3729"><span class="section-number-2">1.</span> 202404</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org478ee16" class="outline-3">
-<h3 id="org478ee16"><span class="section-number-3">1.1.</span> 20240412</h3>
+<div id="outline-container-org140e20d" class="outline-3">
+<h3 id="org140e20d"><span class="section-number-3">1.1.</span> 20240412</h3>
 <div class="outline-text-3" id="text-1-1">
 <ol class="org-ol">
-<li>wrap my head around 理解，领会：努力理解或接受某个概念或想法。</li>
+<li>wrap my head around 理解，领会：努力理解或接受某个概念或想法。 I built this guide because I could never quite wrap my head around Makefiles.</li>
 </ol>
-<p>
-I built this guide because I could never quite wrap my head around Makefiles.
-</p>
 </div>
 </div>
 
-<div id="outline-container-orgfbaf7c6" class="outline-3">
-<h3 id="orgfbaf7c6"><span class="section-number-3">1.2.</span> gdb</h3>
+<div id="outline-container-org98eb206" class="outline-3">
+<h3 id="org98eb206"><span class="section-number-3">1.2.</span> gdb</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>break management</li>
@@ -248,25 +245,27 @@ I built this guide because I could never quite wrap my head around Makefiles.
 <li>print</li>
 </ul>
 <p>
-print &lt;exp&gt;: to get values of expressions.
-print /x &lt;exp&gt;: to get the value of expressions in hexadecimal.
-print /t &lt;exp&gt;: to get the value of expressions in binary.
-print /d &lt;exp&gt;: to get the value of expressions as unsigned int format.
-print /c &lt;exp&gt;: to get the value of expressions as signed int format.
-</p>
-
-<p>
-frame &lt;frame-num&gt;: sets the current stack frame to the indicated as &lt;frame-num&gt;.
-info frame: displays the state of the current stack frame
+&#x2013; print &lt;exp&gt;: to get values of expressions.
+&#x2013;  print /x &lt;exp&gt;: to get the value of expressions in hexadecimal.
+&#x2013; print /t &lt;exp&gt;: to get the value of expressions in binary.
+&#x2013; print /d &lt;exp&gt;: to get the value of expressions as unsigned int format.
+&#x2013; print /c &lt;exp&gt;: to get the value of expressions as signed int format.
 </p>
 
 <ul class="org-ul">
-<li>where</li>
+<li>frame &lt;frame-num&gt;: sets the current stack frame to the indicated as &lt;frame-num&gt;.</li>
+</ul>
+<p>
+&#x2013; info frame: displays the state of the current stack frame
+&#x2013; infor args
+</p>
+<ul class="org-ul">
+<li>where ?</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org78099c2" class="outline-3">
-<h3 id="org78099c2"><span class="section-number-3">1.3.</span> design problem : hash key encode problem in kv system</h3>
+<div id="outline-container-org9689f83" class="outline-3">
+<h3 id="org9689f83"><span class="section-number-3">1.3.</span> design problem : hash key encode problem in kv system</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
 <li><p>
@@ -288,12 +287,12 @@ consider add hash code</li>
 </div>
 
 
-<div id="outline-container-org92b952d" class="outline-2">
-<h2 id="org92b952d"><span class="section-number-2">2.</span> 202403</h2>
+<div id="outline-container-org2af0ac5" class="outline-2">
+<h2 id="org2af0ac5"><span class="section-number-2">2.</span> 202403</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orga1b85b9" class="outline-3">
-<h3 id="orga1b85b9"><span class="section-number-3">2.1.</span> explicitly defaulted and deleted functions</h3>
+<div id="outline-container-org680322a" class="outline-3">
+<h3 id="org680322a"><span class="section-number-3">2.1.</span> explicitly defaulted and deleted functions</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>q1  why auto create default constructor</li>
@@ -304,16 +303,16 @@ consider add hash code</li>
 </div>
 </div>
 </div>
-<div id="outline-container-orgd604153" class="outline-2">
-<h2 id="orgd604153"><span class="section-number-2">3.</span> C++ trival type advantage</h2>
+<div id="outline-container-orgb328092" class="outline-2">
+<h2 id="orgb328092"><span class="section-number-2">3.</span> C++ trival type advantage</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 ctor/dtor/copy/assignment函数，我们对这个类进行构造、析构、拷贝和赋值的时候可以采用最有效率的方法，不调用无所事事正真的那些ctor/dtor等，而直接采用内存操作如malloc()、memcpy()等提高性能，这也是SGI STL内部干的事情。
 </p>
 </div>
 </div>
-<div id="outline-container-orgc3249fd" class="outline-2">
-<h2 id="orgc3249fd"><span class="section-number-2">4.</span> Language::C++ smartpoint</h2>
+<div id="outline-container-org5c0525a" class="outline-2">
+<h2 id="org5c0525a"><span class="section-number-2">4.</span> Language::C++ smartpoint</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li>std::static<sub>pointer</sub><sub>cast</sub> or std::dynamic<sub>pointer</sub><sub>cast</sub> : smart pointer type cast</li>
@@ -326,8 +325,8 @@ In the first alternative (delete object), if the static type of the object to be
 
 
 
-<div id="outline-container-orgcc30cf3" class="outline-2">
-<h2 id="orgcc30cf3"><span class="section-number-2">5.</span> English</h2>
+<div id="outline-container-org8748e92" class="outline-2">
+<h2 id="org8748e92"><span class="section-number-2">5.</span> English</h2>
 <div class="outline-text-2" id="text-5">
 <ul class="org-ul">
 <li>departure 英/ dɪˈpɑːtʃə(r) / 美 / dɪˈpɑːrtʃər / n. 背离；离开，启程</li>
@@ -366,8 +365,8 @@ synopsis英 / sɪˈnɒpsɪs / 美 / sɪˈnɑːpsɪs / n. （书、剧本或电�
 
 
 
-<div id="outline-container-org68c39c2" class="outline-3">
-<h3 id="org68c39c2"><span class="section-number-3">5.1.</span> 202303</h3>
+<div id="outline-container-org2daf9ca" class="outline-3">
+<h3 id="org2daf9ca"><span class="section-number-3">5.1.</span> 202303</h3>
 <div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li>atitut，stit=set up ，place，表示”建立，放“</li>
@@ -394,8 +393,8 @@ restitution n 赔偿，偿还
 </div>
 
 
-<div id="outline-container-orge6c22fb" class="outline-2">
-<h2 id="orge6c22fb"><span class="section-number-2">6.</span> 202404</h2>
+<div id="outline-container-org0298554" class="outline-2">
+<h2 id="org0298554"><span class="section-number-2">6.</span> 202404</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 Makefile automatic variables
