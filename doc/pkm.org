@@ -1,0 +1,127 @@
+TASK_KILLABLE ?
+
+* Projects
+** uintptr_t and intmax_t
+- Navigating Memory in C++: A Guide to Using std::unitptr_t for Addressing Handling
+- INT36-C.Converting a pointer to interger or integer to pointer
+
+* webpages
+https://jalammar.github.io/illustrated-transformer/
+
+* tmp notes
+1.even on 64-bit x86, you can only push 32-bit immediates
+changing 32-bit partials (e.g., by loading from memory) zeroes out the whole 64-register
+
+2. Address calculation has limits.
+reg+reg\*(2 or 4 or 8)+value is as good as it gets.
+
+3. syscall rdi, rsi, rdx, r10, r8, r9
+
+calling convention
+
+Linux amd64: rdi, rsi, rdx, rcx, r8, r9, return value in rax
+
+Linux arm: r0, r1, r2, r3, return value in r0
+
+- callee-saved
+
+(the function you call keeps their values safe on the stack).
+
+rbx, rbp, r12, r13, r14, r15
+
+* others
+
+- ASM
+
+.rept
+
+setc, sets
+
+
+
+
+
+
+* Mindmap && Tmp ideas
+Q1 coding too little - no routine time
+Must make time routine
+
+** Sort my work
+1. language && algorithm {elisp, kotlin, effective c++, python}
+   - system programing
+      random number
+      time
+   - data structure
+      redblank tree
+   - language
+     c operation priority
+
+2. deep learning
+3. linux and hacking {pwn, ulk, perf book}
+- idol research && free career
+ 
+** Coding MingMap - Roadmap
+
+
+** NewIdeas
+- self new learned  word list (for review)
+
+
+** linux kernel : put_user use generic
+https://github.com/JacksonAllan/CC/blob/main/articles/Better_C_Generics_Part_1_The_Extendible_Generic.md
+https://dev.to/pauljlucas/generic-in-c-i48
+* Refers
+** perfbook github
+https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html
+origin  https://github.com/paulmckrcu/perfbook.git (push)
+
+* Coding
+** merge tools
+- getopt
+  
+** makefile auto generate dependency
+https://make.mad-scientist.net/papers/advanced-auto-dependency-generation/
+
+** MindMap
+- random select algorithm
+https://juejin.cn/post/6844904096013484040
+https://www.keithschwarz.com/darts-dice-coins/
+
+
+
+
+
+
+
+
+
+** TODO Efficient C++
+we need to update the template’s implementation to bring it into accord  with Item 25’s admonition to apply std::forward to universal references:
+* Deeplearning
+[https://github.com/daviddwlee84/DeepLearningPractice](https://github.com/daviddwlee84/DeepLearningPractice)
+
+* Security && os
+** review and keep note of this git repo
+https://github.com/FabioBaroni/awesome-exploit-development
+https://read.seas.harvard.edu/cs1610/2025/schedule/
+* life
+** set zotero, when byebye from this dog-company
+https://zotero-chinese.com/user-guide/sync
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

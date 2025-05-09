@@ -1,0 +1,3 @@
+* emacs
+C-h k (describe-key)
+C-h f/v (describe-function / describe-variable)
