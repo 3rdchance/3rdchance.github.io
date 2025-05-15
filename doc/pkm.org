@@ -1,12 +1,141 @@
 TASK_KILLABLE ?
+1. deeplearning routine?
+2. emacs lsp
+3. algorithm
 
-* Projects
+
+static_assert, assert
+
+
+https://wiki.sei.cmu.edu/confluence/display/c/INT32-C.+Ensure+that+operations+on+signed+integers+do+not+result+in+overflow
+
+
+time_t cftime = chrono::system_clock::to_time_t(timeEntry);
+cout << std::asctime(std::localtime(&cftime));
+
+is_regular_file
+
+path, directory_entry, diretory iterator
+
+
+* kotlin
+Structural equality VS  Referential equality
+stricted equal === vs equal in javacripts
+* Org
+- time routine
+  10:00 - 11:30 P1
+  13:00 - 14:00 P2
+  14:00 - 16:00 P3
+  16:00 - 18:00 P4
+  18:00 - 19:00 P5
+  21:00 - 22:00 P6
+  6:30 - 8:00
+
+ add review time
+** sort all my data in pc
+
+* Journal
+- bash special parameters
+- trailing command in python tuple definition
+** 2025 - 0512
+fail: 2 hours not get the getopt point
+** 2025 - 0513
+1. qulified name c++ typename
+2. pointer to pointer
+emacs mark ring?
+C-u prefix argument?
+
+- line graph vs bar graph
+
+-- perf book
+MESI - ? read invalidate vs invalidate
+
+** 514
+initialization {} vs ()
+
+how kotlin exention function multi-line  ?
+
+- elisp
+M-. xref-find-definitions
+M-C-\(indent region)
+C-u universal argument
+C-x z (repeat)
+
+C-h k (key -> command)
+* CODING
+- coding guru
+** merge tools
+- getopt
+  
+** makefile auto generate dependency
+https://make.mad-scientist.net/papers/advanced-auto-dependency-generation/
+
+** MindMap
+- random select algorithm
+https://juejin.cn/post/6844904096013484040
+https://www.keithschwarz.com/darts-dice-coins/
+
+** TODO Efficient C++ 
+we need to update the template’s implementation to bring it into accord  with Item 25’s admonition to apply std::forward to universal references:
+** TODO Algorithms
+* FREE
+- Have free career or my company
++ Deep Learning
+  https://jalammar.github.io/illustrated-transformer/
+** TODO Kotlin 
+* HACKERS
+OS && SECURITY
+** TODO Memory Order
+** TODO pwn.clollege: program interaction2: Binary files
+*** TODO https://intezer.com/blog/executable-linkable-format-101-part-4-dynamic-linking/
+
 ** uintptr_t and intmax_t
 - Navigating Memory in C++: A Guide to Using std::unitptr_t for Addressing Handling
 - INT36-C.Converting a pointer to interger or integer to pointer
 
-* webpages
-https://jalammar.github.io/illustrated-transformer/
+
+** review and keep note of this git repo
+https://github.com/FabioBaroni/awesome-exploit-development
+https://read.seas.harvard.edu/cs1610/2025/schedule/
+
+
+* LIFE
+** set zotero, when byebye from this dog-company
+https://zotero-chinese.com/user-guide/sync
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** TODO s191 class's staff in mac
+
+
+
+** 618 mobile
+手机类，有 2000-150   plus 券
+个别还另有-100 券
+  
+红米turbo4pro  12+256 ， 原价1999叠加国补1699，昨天实际1483
+iqooZ10turbopro  -> 1351
+红米k80 类似
+
+
+个别手机 16+512 的比 12+256 的贵 500+ ，价差仍然有点大。
+
+
 
 * tmp notes
 1.even on 64-bit x86, you can only push 32-bit immediates
@@ -18,28 +147,12 @@ reg+reg\*(2 or 4 or 8)+value is as good as it gets.
 3. syscall rdi, rsi, rdx, r10, r8, r9
 
 calling convention
-
 Linux amd64: rdi, rsi, rdx, rcx, r8, r9, return value in rax
-
 Linux arm: r0, r1, r2, r3, return value in r0
 
 - callee-saved
-
 (the function you call keeps their values safe on the stack).
-
 rbx, rbp, r12, r13, r14, r15
-
-* others
-
-- ASM
-
-.rept
-
-setc, sets
-
-
-
-
 
 
 * Mindmap && Tmp ideas
@@ -70,58 +183,13 @@ Must make time routine
 ** linux kernel : put_user use generic
 https://github.com/JacksonAllan/CC/blob/main/articles/Better_C_Generics_Part_1_The_Extendible_Generic.md
 https://dev.to/pauljlucas/generic-in-c-i48
-* Refers
-** perfbook github
-https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html
-origin  https://github.com/paulmckrcu/perfbook.git (push)
-
-* Coding
-** merge tools
-- getopt
-  
-** makefile auto generate dependency
-https://make.mad-scientist.net/papers/advanced-auto-dependency-generation/
-
-** MindMap
-- random select algorithm
-https://juejin.cn/post/6844904096013484040
-https://www.keithschwarz.com/darts-dice-coins/
 
 
+* Home && other
+** add perfbook github to newpkm
+	https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html
+	git repo https://github.com/paulmckrcu/perfbook.git
 
-
-
-
-
-
-
-** TODO Efficient C++
-we need to update the template’s implementation to bring it into accord  with Item 25’s admonition to apply std::forward to universal references:
-* Deeplearning
-[https://github.com/daviddwlee84/DeepLearningPractice](https://github.com/daviddwlee84/DeepLearningPractice)
-
-* Security && os
-** review and keep note of this git repo
-https://github.com/FabioBaroni/awesome-exploit-development
-https://read.seas.harvard.edu/cs1610/2025/schedule/
-* life
-** set zotero, when byebye from this dog-company
-https://zotero-chinese.com/user-guide/sync
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+** Effective cpp printed
+[67 - 76] - 80]
+         item8]
