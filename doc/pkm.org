@@ -1,14 +1,11 @@
 TASK_KILLABLE ?
-1. deeplearning routine?
-2. emacs lsp
-3. algorithm
 
 
 static_assert, assert
 
 
 https://wiki.sei.cmu.edu/confluence/display/c/INT32-C.+Ensure+that+operations+on+signed+integers+do+not+result+in+overflow
-
+INT15-C. Use intmax_t or uintmax_t for formatted IO on programmer-defined integer types
 
 time_t cftime = chrono::system_clock::to_time_t(timeEntry);
 cout << std::asctime(std::localtime(&cftime));
@@ -18,9 +15,22 @@ is_regular_file
 path, directory_entry, diretory iterator
 
 
+8 gen3
+
+
+
+
 * kotlin
 Structural equality VS  Referential equality
 stricted equal === vs equal in javacripts
+
+
+** data types
+In comparison operations, positive infinity is larger than all values except itself and NaN,
+and negative infinity is smaller than all values except itself and NaN.
+NaN is unordered: it is not equal to, greater than, or less than anything, including itself. x == x is false if the value of x is NaN. You can use this to test whether a value is NaN or not, but the recommended way to test for NaN is with the isnan function (see Floating-Point Number Classification Functions). In addition, <, >, <=, and >= will raise an exception when applied to NaNs.
+
+
 * Org
 - time routine
   10:00 - 11:30 P1
@@ -31,8 +41,81 @@ stricted equal === vs equal in javacripts
   21:00 - 22:00 P6
   6:30 - 8:00
 
- add review time
+add review time
+1. deeplearning 4h
+2. hacker 2h
+3. coding C++ 2h
+4. app 4h
+6. english 2h
+7. elisp 1h
+
+15h not enough
+most 12h   
+
+ 
 ** sort all my data in pc
+
+** sort all my email
+
+
+* CODING - algorithm, system, style
+1. language && algorithm {elisp, kotlin, effective c++, python}
+   - system programing
+      random number
+      time
+   - data structure
+      redblank tree
+   - language
+     c operation priority
+
+2. deep learning
+
+
+- coding guru
+
+
+** emacs lsp  
+** merge tools
+- getopt
+  
+** makefile auto generate dependency
+https://make.mad-scientist.net/papers/advanced-auto-dependency-generation/
+
+** MindMap
+- random select algorithm
+https://juejin.cn/post/6844904096013484040
+https://www.keithschwarz.com/darts-dice-coins/
+
+** TODO Efficient C++ 
+we need to update the template’s implementation to bring it into accord  with Item 25’s admonition to apply std::forward to universal references:
+** TODO Algorithms
+** TODO Elisp
+* FREE - DeepLearning，App
+- Have free career or my company
++ Deep Learning
+  https://jalammar.github.io/illustrated-transformer/
+** TODO Kotlin 
+** Deep Learning
+
+* HACKERS
+linux and hacking {pwn, ulk, perf book}
+OS && SECURITY
+** TODO Memory Order
+** TODO pwn.clollege: program interaction2: Binary files
+*** TODO https://intezer.com/blog/executable-linkable-format-101-part-4-dynamic-linking/
+
+** TODO Linux Kernel
+*** Memory page table operations
+
+** uintptr_t and intmax_t
+- Navigating Memory in C++: A Guide to Using std::unitptr_t for Addressing Handling
+- INT36-C.Converting a pointer to interger or integer to pointer
+
+
+** review and keep note of this git repo
+https://github.com/FabioBaroni/awesome-exploit-development
+https://read.seas.harvard.edu/cs1610/2025/schedule/
+
 
 * Journal
 - bash special parameters
@@ -62,43 +145,6 @@ C-u universal argument
 C-x z (repeat)
 
 C-h k (key -> command)
-* CODING
-- coding guru
-** merge tools
-- getopt
-  
-** makefile auto generate dependency
-https://make.mad-scientist.net/papers/advanced-auto-dependency-generation/
-
-** MindMap
-- random select algorithm
-https://juejin.cn/post/6844904096013484040
-https://www.keithschwarz.com/darts-dice-coins/
-
-** TODO Efficient C++ 
-we need to update the template’s implementation to bring it into accord  with Item 25’s admonition to apply std::forward to universal references:
-** TODO Algorithms
-* FREE
-- Have free career or my company
-+ Deep Learning
-  https://jalammar.github.io/illustrated-transformer/
-** TODO Kotlin 
-* HACKERS
-OS && SECURITY
-** TODO Memory Order
-** TODO pwn.clollege: program interaction2: Binary files
-*** TODO https://intezer.com/blog/executable-linkable-format-101-part-4-dynamic-linking/
-
-** uintptr_t and intmax_t
-- Navigating Memory in C++: A Guide to Using std::unitptr_t for Addressing Handling
-- INT36-C.Converting a pointer to interger or integer to pointer
-
-
-** review and keep note of this git repo
-https://github.com/FabioBaroni/awesome-exploit-development
-https://read.seas.harvard.edu/cs1610/2025/schedule/
-
-
 * LIFE
 ** set zotero, when byebye from this dog-company
 https://zotero-chinese.com/user-guide/sync
@@ -118,9 +164,6 @@ https://zotero-chinese.com/user-guide/sync
 
 
 
-
-
-** TODO s191 class's staff in mac
 
 
 
@@ -160,17 +203,7 @@ Q1 coding too little - no routine time
 Must make time routine
 
 ** Sort my work
-1. language && algorithm {elisp, kotlin, effective c++, python}
-   - system programing
-      random number
-      time
-   - data structure
-      redblank tree
-   - language
-     c operation priority
 
-2. deep learning
-3. linux and hacking {pwn, ulk, perf book}
 - idol research && free career
  
 ** Coding MingMap - Roadmap
@@ -186,6 +219,9 @@ https://dev.to/pauljlucas/generic-in-c-i48
 
 
 * Home && other
+** deep learning flower book
+https://github.com/janishar/mit-deep-learning-book-pdf?tab=readme-ov-file
+https://www.deeplearningbook.org
 ** add perfbook github to newpkm
 	https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html
 	git repo https://github.com/paulmckrcu/perfbook.git
@@ -193,3 +229,6 @@ https://dev.to/pauljlucas/generic-in-c-i48
 ** Effective cpp printed
 [67 - 76] - 80]
          item8]
+** TODO copy s191 class's staff in mac
+* new
+https://lore.kernel.org/lkml/20250515182322.117840-1-pasha.tatashin@soleen.com/
