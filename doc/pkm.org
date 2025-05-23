@@ -7,31 +7,92 @@ static_assert, assert
 https://wiki.sei.cmu.edu/confluence/display/c/INT32-C.+Ensure+that+operations+on+signed+integers+do+not+result+in+overflow
 INT15-C. Use intmax_t or uintmax_t for formatted IO on programmer-defined integer types
 
-time_t cftime = chrono::system_clock::to_time_t(timeEntry);
-cout << std::asctime(std::localtime(&cftime));
-
-is_regular_file
-
-path, directory_entry, diretory iterator
-
-
-8 gen3
 
 
 
 
-* kotlin
-Structural equality VS  Referential equality
-stricted equal === vs equal in javacripts
+- 2024 京东零售技术年度总结
+http://xingyun.jd.com/shendeng/article/detail/42253
+
+- emacs org-mode link titles
+- sb2nb
+
+- gdb
+  https://apps.p.ost2.fyi/learning/course/course-v1:OpenSecurityTraining2+Dbg1012_IntroGDB+2024_v1/block-v1:OpenSecurityTraining2+Dbg1012_IntroGDB+2024_v1+type@sequential+block@db4e8d0f908e4babb7eee091adc83008/block-v1:OpenSecurityTraining2+Dbg1012_IntroGDB+2024_v1+type@vertical+block@ba7def14637d4933b5c2fe0e740ab93f  
+
+- OpenSecurityTraining2 Arch1001 Architecture 1001: x86-64 Assembly
+- 咱就把0-1背包问题讲个通透！
+  https://zhuanlan.zhihu.com/p/345364527
+  https://programmercarl.com/%E8%83%8C%E5%8C%85%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%8001%E8%83%8C%E5%8C%85-1.html
+
+  
+** cs191 practice
+differentiation and stochastic gradient descent (SGD) to optimize a loss function
+derivative - 导数
+gradient - 斜率
+
+? stochastic gradient descent (SGD)
+GradientTape
+** merge -> thrift
+** kotlin
+** sort joural.org
 
 
-** data types
-In comparison operations, positive infinity is larger than all values except itself and NaN,
-and negative infinity is smaller than all values except itself and NaN.
-NaN is unordered: it is not equal to, greater than, or less than anything, including itself. x == x is false if the value of x is NaN. You can use this to test whether a value is NaN or not, but the recommended way to test for NaN is with the isnan function (see Floating-Point Number Classification Functions). In addition, <, >, <=, and >= will raise an exception when applied to NaNs.
+* CODING - algorithm, system, style
+** Algorithm: B-tree/Redblacktree, Knapsack problem, NP problem
+** Style: elisp, lsp, makefile, cmake, coding style, testing
+	https://make.mad-scientist.net/papers/advanced-auto-dependency-generation/
+** Other: merge -> thrift -> io_uring -> time -> random ->
+	time_t cftime = chrono::system_clock::to_time_t(timeEntry);
+	cout << std::asctime(std::localtime(&cftime));
+
++ random select algorithm
+https://juejin.cn/post/6844904096013484040
+https://www.keithschwarz.com/darts-dice-coins/
+** App: Kotlin, effective c++, pthon  
+
+** TODO merge tools
+- getopt
+
+* HACKERS
+linux and hacking {pwn, ulk, perf book}
+OS && SECURITY
+** Kernel: Memory -> Locks
+** Hacker: pwn
+** New Feature study
 
 
-* Org
+** TODO KHO - Google Posts New Version Of Live Update Orchestrator For Speedy Kernel Updates In Production Environments
+https://lore.kernel.org/lkml/20250515182322.117840-1-pasha.tatashin@soleen.com/
+LUO: "Live Update Orchestrator
+KHO: Kexec Handover
+** TODO pwn.clollege: program interaction2: Binary files
+*** TODO https://intezer.com/blog/executable-linkable-format-101-part-4-dynamic-linking/
+
+** TODO Linux Kernel Memory
+*** TODO Memory: Memory Order
+
+
+** uintptr_t and intmax_t
+- Navigating Memory in C++: A Guide to Using std::unitptr_t for Addressing Handling
+- INT36-C.Converting a pointer to interger or integer to pointer
+
+** review and keep note of this git repo
+https://github.com/FabioBaroni/awesome-exploit-development
+https://read.seas.harvard.edu/cs1610/2025/schedule/
+
+* FREE - DeepLearning，App
+- Have free career or my company
+- Free Career Research : idol research && free career
+- App: 
+- DeepLeaning :s191's practice
+    https://jalammar.github.io/illustrated-transformer/
+** TODO Deep Learning practice 1
+** schedule kotlin developement
+
+* Reading
+** Reminiscences of a Stock Operator
+* Org - tosort
 - time routine
   10:00 - 11:30 P1
   13:00 - 14:00 P2
@@ -58,94 +119,15 @@ most 12h
 ** sort all my email
 
 
-* CODING - algorithm, system, style
-1. language && algorithm {elisp, kotlin, effective c++, python}
-   - system programing
-      random number
-      time
-   - data structure
-      redblank tree
-   - language
-     c operation priority
-
-2. deep learning
 
 
-- coding guru
 
 
-** emacs lsp  
-** merge tools
-- getopt
-  
-** makefile auto generate dependency
-https://make.mad-scientist.net/papers/advanced-auto-dependency-generation/
-
-** MindMap
-- random select algorithm
-https://juejin.cn/post/6844904096013484040
-https://www.keithschwarz.com/darts-dice-coins/
-
-** TODO Efficient C++ 
-we need to update the template’s implementation to bring it into accord  with Item 25’s admonition to apply std::forward to universal references:
-** TODO Algorithms
-** TODO Elisp
-* FREE - DeepLearning，App
-- Have free career or my company
-+ Deep Learning
-  https://jalammar.github.io/illustrated-transformer/
-** TODO Kotlin 
-** Deep Learning
-
-* HACKERS
-linux and hacking {pwn, ulk, perf book}
-OS && SECURITY
-** TODO Memory Order
-** TODO pwn.clollege: program interaction2: Binary files
-*** TODO https://intezer.com/blog/executable-linkable-format-101-part-4-dynamic-linking/
-
-** TODO Linux Kernel
-*** Memory page table operations
-
-** uintptr_t and intmax_t
-- Navigating Memory in C++: A Guide to Using std::unitptr_t for Addressing Handling
-- INT36-C.Converting a pointer to interger or integer to pointer
 
 
-** review and keep note of this git repo
-https://github.com/FabioBaroni/awesome-exploit-development
-https://read.seas.harvard.edu/cs1610/2025/schedule/
-
-
-* Journal
-- bash special parameters
-- trailing command in python tuple definition
-** 2025 - 0512
-fail: 2 hours not get the getopt point
-** 2025 - 0513
-1. qulified name c++ typename
-2. pointer to pointer
-emacs mark ring?
-C-u prefix argument?
-
-- line graph vs bar graph
-
--- perf book
-MESI - ? read invalidate vs invalidate
-
-** 514
-initialization {} vs ()
-
-how kotlin exention function multi-line  ?
-
-- elisp
-M-. xref-find-definitions
-M-C-\(indent region)
-C-u universal argument
-C-x z (repeat)
-
-C-h k (key -> command)
 * LIFE
+1. buy some zcash - clear my zcash files in my disk
+
 ** set zotero, when byebye from this dog-company
 https://zotero-chinese.com/user-guide/sync
 
@@ -178,8 +160,22 @@ iqooZ10turbopro  -> 1351
 
 个别手机 16+512 的比 12+256 的贵 500+ ，价差仍然有点大。
 
+** Effective cpp printed
+[67 - 76] - 80]
+         item8]
 
 
+** Home
+- copy s191 class's staff in mac
+- Clean Mac
+- add perfbook github to newpkm repo
+	https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html
+	git repo https://github.com/paulmckrcu/perfbook.git
+
+- add deep learning flower book to newpkm repo
+https://github.com/janishar/mit-deep-learning-book-pdf?tab=readme-ov-file
+https://www.deeplearningbook.org
+	
 * tmp notes
 1.even on 64-bit x86, you can only push 32-bit immediates
 changing 32-bit partials (e.g., by loading from memory) zeroes out the whole 64-register
@@ -199,36 +195,23 @@ rbx, rbp, r12, r13, r14, r15
 
 
 * Mindmap && Tmp ideas
-Q1 coding too little - no routine time
-Must make time routine
-
-** Sort my work
-
-- idol research && free career
- 
-** Coding MingMap - Roadmap
-
-
 ** NewIdeas
-- self new learned  word list (for review)
-
-
+- self learning progress record  word list (for review)
+- Raft && Cache System
+  can redis as a raft member ?  
 ** linux kernel : put_user use generic
 https://github.com/JacksonAllan/CC/blob/main/articles/Better_C_Generics_Part_1_The_Extendible_Generic.md
 https://dev.to/pauljlucas/generic-in-c-i48
 
 
-* Home && other
-** deep learning flower book
-https://github.com/janishar/mit-deep-learning-book-pdf?tab=readme-ov-file
-https://www.deeplearningbook.org
-** add perfbook github to newpkm
-	https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html
-	git repo https://github.com/paulmckrcu/perfbook.git
 
-** Effective cpp printed
-[67 - 76] - 80]
-         item8]
-** TODO copy s191 class's staff in mac
-* new
-https://lore.kernel.org/lkml/20250515182322.117840-1-pasha.tatashin@soleen.com/
+
+
+
+* test
+(buffer-name)
+(buffer-file-name)
+(current-buffer)
+(switch-to-buffer other-buffer)
+(buffer-size)
+(point)
