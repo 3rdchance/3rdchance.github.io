@@ -18,14 +18,14 @@ http://xingyun.jd.com/shendeng/article/detail/42253
 - sb2nb
 
 - gdb
-  https://apps.p.ost2.fyi/learning/course/course-v1:OpenSecurityTraining2+Dbg1012_IntroGDB+2024_v1/block-v1:OpenSecurityTraining2+Dbg1012_IntroGDB+2024_v1+type@sequential+block@db4e8d0f908e4babb7eee091adc83008/block-v1:OpenSecurityTraining2+Dbg1012_IntroGDB+2024_v1+type@vertical+block@ba7def14637d4933b5c2fe0e740ab93f  
+  https://apps.p.ost2.fyi/learning/course/course-v1:OpenSecurityTraining2+Dbg1012_IntroGDB+2024_v1/block-v1:OpenSecurityTraining2+Dbg1012_IntroGDB+2024_v1+type@sequential+block@db4e8d0f908e4babb7eee091adc83008/block-v1:OpenSecurityTraining2+Dbg1012_IntroGDB+2024_v1+type@vertical+block@ba7def14637d4933b5c2fe0e740ab93f
 
 - OpenSecurityTraining2 Arch1001 Architecture 1001: x86-64 Assembly
 - 咱就把0-1背包问题讲个通透！
   https://zhuanlan.zhihu.com/p/345364527
   https://programmercarl.com/%E8%83%8C%E5%8C%85%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%8001%E8%83%8C%E5%8C%85-1.html
 
-  
+
 ** cs191 practice
 differentiation and stochastic gradient descent (SGD) to optimize a loss function
 derivative - 导数
@@ -36,6 +36,98 @@ GradientTape
 ** merge -> thrift
 ** kotlin
 ** sort joural.org
+
+
+* RoadMap
+- long target, short target, short
+
+
+1. 动态规划背包问题
+2. s191, tensorflow guide
+3. kho (kexec handle over) (linux insides- booting and initialize)
+   https://patchew.org/linux/20250509074635.3187114-1-changyuanl@google.com/20250509074635.3187114-2-changyuanl@google.com/
+4. coding
+5. life
+
+
+|       | gain |
+|-------+------|
+| Habit |      |
+|       |      |
+* GTD - Get things done
+harness
+
+
+Stores get committed when they leave the SB (they are committed to L1 or memory).
+
+exclusive-or
+
+
+exchange-point-and-mark C-x C-x
+pop-global-mark C-x C-@, C-x C-SPC
+C-u C-<SPC>’ twice
+
+
+C-u C-h i - open info doc
+** the process of mastery a skill
+
+
+** linux kernel
+0. repos (trees)
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
+https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/
+https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git
+
+- linux memory maintainer Andrew Morton
+
+git://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm
+
+https://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm.git
+
+
+1. developement flow
+- Why does the Linux kernel repository have only one branch
+There is no need in a bunch of branches for mainline kernel, as development process in this tree never stops, and once new version is released, there won't be any back-porting to that version (inside mainline tree). So Linus sticks to tags (instead of branches) in this case.
+- why next tree (integration-tests)
+  Before updates from subsystem trees are merged into the mainline 4.x tree, they need to be integration-tested. For this purpose, a special testing repository exists into which virtually all subsystem trees are pulled on an almost daily basis:
+
+* memory model
+The Armv8 architecture defines memory barriers that provide a range of functionality, including:
+
+1. Ordering of load and store instructions
+2. Completion of load and store instructions
+3. Context synchronization
+4. Restrictions on speculation
+
+
+
+Processor Element (PE)
+Shareability domain
+
+
+- DMB
+A DMB does not prevent future explicit data reads from being speculatively executed. If a read is speculatively executed, the core must discard the speculative data from the register. The core must also re-execute the load after all previous explicit data accesses are observed.
+- DSB:  Data Synchronization Barrier
+
+- question: memory model transitivity
+** todos
+1. The kernel concurrency sanitizer (KCSAN) [EMV+20a, EMV+20b], based in part on RacerD [BGOS18] and implementing LKMM, has also been added to the Linux kernel and is now heavily used.
+
+* KHO project start
+
+- pathview
+  https://patchew.org/linux/20250509074635.3187114-1-changyuanl@google.com/
+- repos
+https://github.com/googleprodkernel/linux-liveupdate.git
+
+- refs
+1. pkernfs: Persisting guest memory and kernel/device state safely across kexec
+     https://lpc.events/event/17/contributions/1485/
+
+** Patch1 memblock: add MEMBLOCK_RSRV_KERN flag
+1. memblock design and usage
+   need operation:  merge, reallocate memory, split
+
 
 
 * CODING - algorithm, system, style
@@ -49,7 +141,7 @@ GradientTape
 + random select algorithm
 https://juejin.cn/post/6844904096013484040
 https://www.keithschwarz.com/darts-dice-coins/
-** App: Kotlin, effective c++, pthon  
+** App: Kotlin, effective c++, pthon
 
 ** TODO merge tools
 - getopt
@@ -84,7 +176,7 @@ https://read.seas.harvard.edu/cs1610/2025/schedule/
 * FREE - DeepLearning，App
 - Have free career or my company
 - Free Career Research : idol research && free career
-- App: 
+- App:
 - DeepLeaning :s191's practice
     https://jalammar.github.io/illustrated-transformer/
 ** TODO Deep Learning practice 1
@@ -111,9 +203,9 @@ add review time
 7. elisp 1h
 
 15h not enough
-most 12h   
+most 12h
 
- 
+
 ** sort all my data in pc
 
 ** sort all my email
@@ -152,7 +244,7 @@ https://zotero-chinese.com/user-guide/sync
 ** 618 mobile
 手机类，有 2000-150   plus 券
 个别还另有-100 券
-  
+
 红米turbo4pro  12+256 ， 原价1999叠加国补1699，昨天实际1483
 iqooZ10turbopro  -> 1351
 红米k80 类似
@@ -175,7 +267,7 @@ iqooZ10turbopro  -> 1351
 - add deep learning flower book to newpkm repo
 https://github.com/janishar/mit-deep-learning-book-pdf?tab=readme-ov-file
 https://www.deeplearningbook.org
-	
+
 * tmp notes
 1.even on 64-bit x86, you can only push 32-bit immediates
 changing 32-bit partials (e.g., by loading from memory) zeroes out the whole 64-register
@@ -198,7 +290,7 @@ rbx, rbp, r12, r13, r14, r15
 ** NewIdeas
 - self learning progress record  word list (for review)
 - Raft && Cache System
-  can redis as a raft member ?  
+  can redis as a raft member ?
 ** linux kernel : put_user use generic
 https://github.com/JacksonAllan/CC/blob/main/articles/Better_C_Generics_Part_1_The_Extendible_Generic.md
 https://dev.to/pauljlucas/generic-in-c-i48
