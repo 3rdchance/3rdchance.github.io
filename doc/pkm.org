@@ -1,3 +1,74 @@
+* Org
+** Question to review
+1. are you more health ?
+2. are you more amibitious ?
+3. What are your target ?
+
+** MindMap && RoadMap
+1. sort all my data in pc
+2. sort all my emails - 163, gmail ...
+
+
+
+
+
+
+** are my pc and laptop is cleaned ?
+
+
+** How to Change and GTD - Get things done
+1. write the note of what is gtd
+2. the process of master a skill
+3. record status of everyday, for analysis
+myquestion: lack of energy, often tired
+* Ideas && Reading
+1. can raft / paxos .. consensus algorithm include cache management ?
+
+- Reminiscences of a Stock Operator
+
+* Hackers
+pwn
+** MindMap && RoadMap
+- PGO
+** KHO project start
+
+- pathview
+  https://patchew.org/linux/20250509074635.3187114-1-changyuanl@google.com/
+- repos
+https://github.com/googleprodkernel/linux-liveupdate.git
+
+- refs
+1. pkernfs: Persisting guest memory and kernel/device state safely across kexec
+     https://lpc.events/event/17/contributions/1485/
+
+** Patch1 memblock: add MEMBLOCK_RSRV_KERN flag
+1. memblock design and usage
+   need operation:  merge, reallocate memory, split
+
+** linux kernel repos and develope road - make to notes
+0. repos (trees)
+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
+https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/
+https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git
+
+- linux memory maintainer Andrew Morton
+
+git://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm
+
+https://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm.git
+
+
+1. developement flow
+- Why does the Linux kernel repository have only one branch
+There is no need in a bunch of branches for mainline kernel, as development process in this tree never stops, and once new version is released, there won't be any back-porting to that version (inside mainline tree). So Linus sticks to tags (instead of branches) in this case.
+- why next tree (integration-tests)
+  Before updates from subsystem trees are merged into the mainline 4.x tree, they need to be integration-tested. For this purpose, a special testing repository exists into which virtually all subsystem trees are pulled on an almost daily basis:
+
+
+
+* DataSheet
+* ---------------------------------------- BEFORE ------------------------------------------------------
+
 TASK_KILLABLE ?
 
 
@@ -57,7 +128,6 @@ GradientTape
 * GTD - Get things done
 harness
 
-
 Stores get committed when they leave the SB (they are committed to L1 or memory).
 
 exclusive-or
@@ -69,27 +139,10 @@ C-u C-<SPC>’ twice
 
 
 C-u C-h i - open info doc
-** the process of mastery a skill
 
 
-** linux kernel
-0. repos (trees)
-https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/
-https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/
-https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git
-
-- linux memory maintainer Andrew Morton
-
-git://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm
-
-https://git.kernel.org/pub/scm/linux/kernel/git/akpm/mm.git
 
 
-1. developement flow
-- Why does the Linux kernel repository have only one branch
-There is no need in a bunch of branches for mainline kernel, as development process in this tree never stops, and once new version is released, there won't be any back-porting to that version (inside mainline tree). So Linus sticks to tags (instead of branches) in this case.
-- why next tree (integration-tests)
-  Before updates from subsystem trees are merged into the mainline 4.x tree, they need to be integration-tested. For this purpose, a special testing repository exists into which virtually all subsystem trees are pulled on an almost daily basis:
 
 * memory model
 The Armv8 architecture defines memory barriers that provide a range of functionality, including:
@@ -112,22 +165,6 @@ A DMB does not prevent future explicit data reads from being speculatively execu
 - question: memory model transitivity
 ** todos
 1. The kernel concurrency sanitizer (KCSAN) [EMV+20a, EMV+20b], based in part on RacerD [BGOS18] and implementing LKMM, has also been added to the Linux kernel and is now heavily used.
-
-* KHO project start
-
-- pathview
-  https://patchew.org/linux/20250509074635.3187114-1-changyuanl@google.com/
-- repos
-https://github.com/googleprodkernel/linux-liveupdate.git
-
-- refs
-1. pkernfs: Persisting guest memory and kernel/device state safely across kexec
-     https://lpc.events/event/17/contributions/1485/
-
-** Patch1 memblock: add MEMBLOCK_RSRV_KERN flag
-1. memblock design and usage
-   need operation:  merge, reallocate memory, split
-
 
 
 * CODING - algorithm, system, style
@@ -182,39 +219,6 @@ https://read.seas.harvard.edu/cs1610/2025/schedule/
 ** TODO Deep Learning practice 1
 ** schedule kotlin developement
 
-* Reading
-** Reminiscences of a Stock Operator
-* Org - tosort
-- time routine
-  10:00 - 11:30 P1
-  13:00 - 14:00 P2
-  14:00 - 16:00 P3
-  16:00 - 18:00 P4
-  18:00 - 19:00 P5
-  21:00 - 22:00 P6
-  6:30 - 8:00
-
-add review time
-1. deeplearning 4h
-2. hacker 2h
-3. coding C++ 2h
-4. app 4h
-6. english 2h
-7. elisp 1h
-
-15h not enough
-most 12h
-
-
-** sort all my data in pc
-
-** sort all my email
-
-
-
-
-
-
 
 
 * LIFE
@@ -222,21 +226,6 @@ most 12h
 
 ** set zotero, when byebye from this dog-company
 https://zotero-chinese.com/user-guide/sync
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -294,16 +283,3 @@ rbx, rbp, r12, r13, r14, r15
 ** linux kernel : put_user use generic
 https://github.com/JacksonAllan/CC/blob/main/articles/Better_C_Generics_Part_1_The_Extendible_Generic.md
 https://dev.to/pauljlucas/generic-in-c-i48
-
-
-
-
-
-
-* test
-(buffer-name)
-(buffer-file-name)
-(current-buffer)
-(switch-to-buffer other-buffer)
-(buffer-size)
-(point)
