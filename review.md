@@ -1,5 +1,19 @@
 # review
 
+prologue
+英
+/ ˈprəʊlɒɡ /
+开场白；序言
+vt. 加上……前言；为……作序
+
+epilogue
+英
+/ ˈepɪlɒɡ /
+美
+/ ˈepɪlɔːɡ /
+
+
+
 # datasheet
 # git
 git clone –mirror git@coding.jd.com:pmem/pmdk.git git remote update
