@@ -1,17 +1,10 @@
+# 2025-08
+- anxiety vs nervouseness
+anxiety is a more persistent and intense experience that can disrupt daily life, while nervousness is a temporary and often situation-specific reaction
+- prologue 英/ ˈprəʊlɒɡ / 开场白；序言
+- epilogue 英/ ˈepɪlɒɡ /
+
 # review
-
-prologue
-英
-/ ˈprəʊlɒɡ /
-开场白；序言
-vt. 加上……前言；为……作序
-
-epilogue
-英
-/ ˈepɪlɒɡ /
-美
-/ ˈepɪlɔːɡ /
-
 
 
 # datasheet
