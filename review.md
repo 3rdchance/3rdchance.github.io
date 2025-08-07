@@ -1,9 +1,15 @@
-axiety vs nervousness
+Programmers casually refer to a memory address as the way to access the contents of a memory cell.
+anxiety vs nervousness
 prologue / epilogue [](#0804)
 haste [](#0805)
 what is ... [](#0805)
 
 # 2025-08
+- 0805
+Programmers casually refer to a memory address as the way to access the contents of a memory cell.
+"casually refer to"译为"通俗地称为"，既保留原文的随意感又符合中文表达
+将英文被动式"as the way to..."转化为中文主动式"...的途径"，更自然
+
 - 0804 <span id = "0804"> </span>
 1. anxiety vs nervouseness
 anxiety is a more persistent and intense experience that can disrupt daily life, while nervousness is a temporary and often situation-specific reaction
