@@ -1,0 +1,20 @@
+* C++
+** develope tools
+DistCC - 分布式编译环境
+clang-refactor 工具，用于自动优化头文件中的函数定义和实现。
+Unity Build技术，将多个CPP文件合并到一个CPP文件中进行编译
+
+
+** arraysize computed at compile time
+template<typename T, std::size_t N>
+constexpr std::size_t arraySize(T (&)[N]) noexcept
+{ return N;}
+
+
+**  Rvalue References (T&&) Can Be Implicitly Converted to Lvalues
+If you have an rvalue reference variable, it is actually an lvalue (because it has a name).
+
+For example:
+
+int&& rref = 42;  // rref is an rvalue reference but is itself an lvalue
+int& lref = rref; // OK, because rref is now treated as an lvalue
